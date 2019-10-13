@@ -6,49 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/adrian/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.cpp
-AlgoritmosGeneticos.h
-/home/adrian/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.h
+stdio.h
+-
 
-/home/adrian/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.h
+bits/stdc++.h
+-
 
-/home/adrian/CLionProjects/Proyecto2_Datos2/Backtracking.cpp
-Backtracking.h
-/home/adrian/CLionProjects/Proyecto2_Datos2/Backtracking.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Backtracking.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Cursos.cpp
-Cursos.h
-/home/adrian/CLionProjects/Proyecto2_Datos2/Cursos.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Cursos.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Estudiantes.cpp
-Estudiantes.h
-/home/adrian/CLionProjects/Proyecto2_Datos2/Estudiantes.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Estudiantes.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Juego.cpp
-Juego.h
-/home/adrian/CLionProjects/Proyecto2_Datos2/Juego.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Juego.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Pathfinding.cpp
-Pathfinding.h
-/home/adrian/CLionProjects/Proyecto2_Datos2/Pathfinding.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Pathfinding.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Tablero.cpp
-Tablero.h
-/home/adrian/CLionProjects/Proyecto2_Datos2/Tablero.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/Tablero.h
-
-/home/adrian/CLionProjects/Proyecto2_Datos2/main.cpp
+/home/kevin/CLionProjects/Proyecto2_Datos2/main.cpp
 iostream
 -
+Backtracking.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.h
+Pathfinding.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.h
 
