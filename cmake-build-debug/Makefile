@@ -231,6 +231,33 @@ Estudiantes.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Estudiantes.cpp.s
 .PHONY : Estudiantes.cpp.s
 
+Individual.o: Individual.cpp.o
+
+.PHONY : Individual.o
+
+# target to build an object file
+Individual.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o
+.PHONY : Individual.cpp.o
+
+Individual.i: Individual.cpp.i
+
+.PHONY : Individual.i
+
+# target to preprocess a source file
+Individual.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.i
+.PHONY : Individual.cpp.i
+
+Individual.s: Individual.cpp.s
+
+.PHONY : Individual.s
+
+# target to generate assembly for a file
+Individual.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.s
+.PHONY : Individual.cpp.s
+
 Juego.o: Juego.cpp.o
 
 .PHONY : Juego.o
@@ -360,6 +387,9 @@ help:
 	@echo "... Estudiantes.o"
 	@echo "... Estudiantes.i"
 	@echo "... Estudiantes.s"
+	@echo "... Individual.o"
+	@echo "... Individual.i"
+	@echo "... Individual.s"
 	@echo "... Juego.o"
 	@echo "... Juego.i"
 	@echo "... Juego.s"

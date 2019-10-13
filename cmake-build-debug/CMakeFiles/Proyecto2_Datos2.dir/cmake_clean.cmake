@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o"
   "CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o"
   "CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o"
+  "CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o"
   "Proyecto2_Datos2.pdb"
   "Proyecto2_Datos2"
 )

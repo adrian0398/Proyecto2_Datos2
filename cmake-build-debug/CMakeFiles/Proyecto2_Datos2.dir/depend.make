@@ -13,6 +13,10 @@ CMakeFiles/Proyecto2_Datos2.dir/Cursos.cpp.o: ../Cursos.h
 CMakeFiles/Proyecto2_Datos2.dir/Estudiantes.cpp.o: ../Estudiantes.cpp
 CMakeFiles/Proyecto2_Datos2.dir/Estudiantes.cpp.o: ../Estudiantes.h
 
+CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o: ../AlgoritmosGeneticos.h
+CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o: ../Individual.cpp
+CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o: ../Individual.h
+
 CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o: ../Juego.cpp
 CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o: ../Juego.h
 
@@ -22,5 +26,7 @@ CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o: ../Pathfinding.h
 CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.o: ../Tablero.cpp
 CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.o: ../Tablero.h
 
+CMakeFiles/Proyecto2_Datos2.dir/main.cpp.o: ../AlgoritmosGeneticos.h
+CMakeFiles/Proyecto2_Datos2.dir/main.cpp.o: ../Individual.h
 CMakeFiles/Proyecto2_Datos2.dir/main.cpp.o: ../main.cpp
 

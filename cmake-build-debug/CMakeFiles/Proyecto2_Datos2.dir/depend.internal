@@ -13,6 +13,10 @@ CMakeFiles/Proyecto2_Datos2.dir/Cursos.cpp.o
 CMakeFiles/Proyecto2_Datos2.dir/Estudiantes.cpp.o
  /home/adrian/CLionProjects/Proyecto2_Datos2/Estudiantes.cpp
  /home/adrian/CLionProjects/Proyecto2_Datos2/Estudiantes.h
+CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o
+ /home/adrian/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.h
+ /home/adrian/CLionProjects/Proyecto2_Datos2/Individual.cpp
+ /home/adrian/CLionProjects/Proyecto2_Datos2/Individual.h
 CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o
  /home/adrian/CLionProjects/Proyecto2_Datos2/Juego.cpp
  /home/adrian/CLionProjects/Proyecto2_Datos2/Juego.h
@@ -23,4 +27,6 @@ CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.o
  /home/adrian/CLionProjects/Proyecto2_Datos2/Tablero.cpp
  /home/adrian/CLionProjects/Proyecto2_Datos2/Tablero.h
 CMakeFiles/Proyecto2_Datos2.dir/main.cpp.o
+ /home/adrian/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.h
+ /home/adrian/CLionProjects/Proyecto2_Datos2/Individual.h
  /home/adrian/CLionProjects/Proyecto2_Datos2/main.cpp

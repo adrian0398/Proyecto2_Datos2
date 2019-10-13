@@ -108,6 +108,12 @@
 		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Estudiantes.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Individual.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Individual.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
 		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Juego.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
