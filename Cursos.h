@@ -18,6 +18,12 @@ class Cursos {
     int rango;
     int tiempo_de_regeneracion_de_la_evaluacion_especial;
     int tiempo_de_regeneracion_de_la_evaluacion;
+    int upgrade;
+public:
+    int getUpgrade() const;
+
+    void setUpgrade(int upgrade);
+
 public:
     const string &getTipo() const;
 

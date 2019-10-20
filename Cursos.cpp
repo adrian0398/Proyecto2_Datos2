@@ -75,3 +75,11 @@ int Cursos::getTiempoDeRegeneracionDeLaEvaluacion() const {
 void Cursos::setTiempoDeRegeneracionDeLaEvaluacion(int tiempoDeRegeneracionDeLaEvaluacion) {
     tiempo_de_regeneracion_de_la_evaluacion = tiempoDeRegeneracionDeLaEvaluacion;
 }
+
+int Cursos::getUpgrade() const {
+    return upgrade;
+}
+
+void Cursos::setUpgrade(int upgrade) {
+    Cursos::upgrade = upgrade;
+}
