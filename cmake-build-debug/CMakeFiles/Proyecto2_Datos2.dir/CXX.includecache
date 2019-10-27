@@ -9,6 +9,30 @@
 /home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.h
 stdio.h
 -
+List_Posiciones.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/List_Posiciones.h
+
+/home/kevin/CLionProjects/Proyecto2_Datos2/List_Posiciones.h
+string
+-
+iostream
+-
+
+/home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.cpp
+stdlib.h
+-
+time.h
+-
+iostream
+-
+Matriz.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.h
+Backtracking.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.h
+Pathfinding.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.h
+
+/home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.h
 
 /home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.h
 bits/stdc++.h
@@ -21,4 +45,6 @@ Backtracking.h
 /home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.h
 Pathfinding.h
 /home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.h
+Matriz.h
+/home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.h
 

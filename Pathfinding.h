@@ -4,6 +4,8 @@
 
 #ifndef PROYECTO2_DATOS2_PATHFINDING_H
 #define PROYECTO2_DATOS2_PATHFINDING_H
+#define ROW 10
+#define COL 10
 
 // A C++ Program to implement A* Search Algorithm
 #include<bits/stdc++.h>
@@ -13,8 +15,6 @@ class Pathfinding {
 
 // Creating a shortcut for int, int pair type
     typedef pair<int, int> Pair;
-
-// Creating a shortcut for pair<int, pair<int, int>> type
     typedef pair<double, pair<int, int>> pPair;
 
 // A structure to hold the neccesary parameters
@@ -23,7 +23,6 @@ class Pathfinding {
         // Row and Column index of its parent
         // Note that 0 <= i <= ROW-1 & 0 <= j <= COL-1
         int parent_i, parent_j;
-        // f = g + h
         double f, g, h;
     };
 
@@ -73,9 +72,7 @@ class Pathfinding {
         printf ("\nThe Path is ");
         int row = dest.first;
         int col = dest.second;
-
         stack<Pair> Path;
-
         while (!(cellDetails[row][col].parent_i == row
                  && cellDetails[row][col].parent_j == col ))
         {
@@ -85,7 +82,6 @@ class Pathfinding {
             row = temp_row;
             col = temp_col;
         }
-
         Path.push (make_pair (row, col));
         while (!Path.empty())
         {
@@ -93,7 +89,6 @@ class Pathfinding {
             Path.pop();
             printf("-> (%d,%d) ",p.first,p.second);
         }
-
         return;
     }
 

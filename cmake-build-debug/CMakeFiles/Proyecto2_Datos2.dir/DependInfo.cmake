@@ -5,11 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/kevin/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o"
-  "/home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o"
   "/home/kevin/CLionProjects/Proyecto2_Datos2/Cursos.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/Cursos.cpp.o"
   "/home/kevin/CLionProjects/Proyecto2_Datos2/Estudiantes.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/Estudiantes.cpp.o"
   "/home/kevin/CLionProjects/Proyecto2_Datos2/Juego.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o"
-  "/home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o"
+  "/home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o"
   "/home/kevin/CLionProjects/Proyecto2_Datos2/Tablero.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.o"
   "/home/kevin/CLionProjects/Proyecto2_Datos2/main.cpp" "/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/Proyecto2_Datos2.dir/main.cpp.o"
   )

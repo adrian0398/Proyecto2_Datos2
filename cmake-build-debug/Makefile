@@ -150,33 +150,6 @@ AlgoritmosGeneticos.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.s
 .PHONY : AlgoritmosGeneticos.cpp.s
 
-Backtracking.o: Backtracking.cpp.o
-
-.PHONY : Backtracking.o
-
-# target to build an object file
-Backtracking.cpp.o:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o
-.PHONY : Backtracking.cpp.o
-
-Backtracking.i: Backtracking.cpp.i
-
-.PHONY : Backtracking.i
-
-# target to preprocess a source file
-Backtracking.cpp.i:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.i
-.PHONY : Backtracking.cpp.i
-
-Backtracking.s: Backtracking.cpp.s
-
-.PHONY : Backtracking.s
-
-# target to generate assembly for a file
-Backtracking.cpp.s:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.s
-.PHONY : Backtracking.cpp.s
-
 Cursos.o: Cursos.cpp.o
 
 .PHONY : Cursos.o
@@ -258,32 +231,32 @@ Juego.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.s
 .PHONY : Juego.cpp.s
 
-Pathfinding.o: Pathfinding.cpp.o
+Matriz.o: Matriz.cpp.o
 
-.PHONY : Pathfinding.o
+.PHONY : Matriz.o
 
 # target to build an object file
-Pathfinding.cpp.o:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o
-.PHONY : Pathfinding.cpp.o
+Matriz.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o
+.PHONY : Matriz.cpp.o
 
-Pathfinding.i: Pathfinding.cpp.i
+Matriz.i: Matriz.cpp.i
 
-.PHONY : Pathfinding.i
+.PHONY : Matriz.i
 
 # target to preprocess a source file
-Pathfinding.cpp.i:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.i
-.PHONY : Pathfinding.cpp.i
+Matriz.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.i
+.PHONY : Matriz.cpp.i
 
-Pathfinding.s: Pathfinding.cpp.s
+Matriz.s: Matriz.cpp.s
 
-.PHONY : Pathfinding.s
+.PHONY : Matriz.s
 
 # target to generate assembly for a file
-Pathfinding.cpp.s:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.s
-.PHONY : Pathfinding.cpp.s
+Matriz.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.s
+.PHONY : Matriz.cpp.s
 
 Tablero.o: Tablero.cpp.o
 
@@ -351,9 +324,6 @@ help:
 	@echo "... AlgoritmosGeneticos.o"
 	@echo "... AlgoritmosGeneticos.i"
 	@echo "... AlgoritmosGeneticos.s"
-	@echo "... Backtracking.o"
-	@echo "... Backtracking.i"
-	@echo "... Backtracking.s"
 	@echo "... Cursos.o"
 	@echo "... Cursos.i"
 	@echo "... Cursos.s"
@@ -363,9 +333,9 @@ help:
 	@echo "... Juego.o"
 	@echo "... Juego.i"
 	@echo "... Juego.s"
-	@echo "... Pathfinding.o"
-	@echo "... Pathfinding.i"
-	@echo "... Pathfinding.s"
+	@echo "... Matriz.o"
+	@echo "... Matriz.i"
+	@echo "... Matriz.s"
 	@echo "... Tablero.o"
 	@echo "... Tablero.i"
 	@echo "... Tablero.s"

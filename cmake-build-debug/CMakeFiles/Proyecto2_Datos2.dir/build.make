@@ -109,35 +109,9 @@ CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/CLionProjects/Proyecto2_Datos2/Tablero.cpp -o CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.s
 
-CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o: CMakeFiles/Proyecto2_Datos2.dir/flags.make
-CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o: ../Backtracking.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o -c /home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.cpp
-
-CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.cpp > CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.i
-
-CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.cpp -o CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.s
-
-CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o: CMakeFiles/Proyecto2_Datos2.dir/flags.make
-CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o: ../Pathfinding.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o -c /home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.cpp
-
-CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.cpp > CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.i
-
-CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.cpp -o CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.s
-
 CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o: CMakeFiles/Proyecto2_Datos2.dir/flags.make
 CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o: ../AlgoritmosGeneticos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o -c /home/kevin/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.cpp
 
 CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.i: cmake_force
@@ -150,7 +124,7 @@ CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.s: cmake_force
 
 CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o: CMakeFiles/Proyecto2_Datos2.dir/flags.make
 CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o: ../Juego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o -c /home/kevin/CLionProjects/Proyecto2_Datos2/Juego.cpp
 
 CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.i: cmake_force
@@ -161,16 +135,28 @@ CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/CLionProjects/Proyecto2_Datos2/Juego.cpp -o CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.s
 
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o: CMakeFiles/Proyecto2_Datos2.dir/flags.make
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o: ../Matriz.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o -c /home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.cpp
+
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.cpp > CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.i
+
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.cpp -o CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.s
+
 # Object files for target Proyecto2_Datos2
 Proyecto2_Datos2_OBJECTS = \
 "CMakeFiles/Proyecto2_Datos2.dir/main.cpp.o" \
 "CMakeFiles/Proyecto2_Datos2.dir/Estudiantes.cpp.o" \
 "CMakeFiles/Proyecto2_Datos2.dir/Cursos.cpp.o" \
 "CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.o" \
-"CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o" \
-"CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o" \
 "CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o" \
-"CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o"
+"CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o" \
+"CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o"
 
 # External object files for target Proyecto2_Datos2
 Proyecto2_Datos2_EXTERNAL_OBJECTS =
@@ -179,13 +165,12 @@ Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/main.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Estudiantes.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Cursos.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.o
-Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o
-Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o
+Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/build.make
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Proyecto2_Datos2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kevin/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Proyecto2_Datos2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Proyecto2_Datos2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -90,9 +90,6 @@
 		<Unit filename="/home/kevin/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.cpp">
-			<Option target="Proyecto2_Datos2"/>
-		</Unit>
 		<Unit filename="/home/kevin/CLionProjects/Proyecto2_Datos2/Backtracking.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
@@ -114,7 +111,10 @@
 		<Unit filename="/home/kevin/CLionProjects/Proyecto2_Datos2/Juego.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.cpp">
+		<Unit filename="/home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/kevin/CLionProjects/Proyecto2_Datos2/Matriz.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
 		<Unit filename="/home/kevin/CLionProjects/Proyecto2_Datos2/Pathfinding.h">
