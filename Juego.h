@@ -5,6 +5,8 @@
 #ifndef PROYECTO2_DATOS2_JUEGO_H
 #define PROYECTO2_DATOS2_JUEGO_H
 #include <gtk/gtk.h>
+#include <thread>
+
 
 
 
@@ -28,6 +30,8 @@ public:
 public:
     Juego(int porcentajeDeAprobacion);
     void iniciar_juego();
+    void printd();
+
 
 public:
 

@@ -7,11 +7,17 @@
 #IncludeRegexTransform: 
 
 /home/adrian/CLionProjects/Proyecto2_Datos2/Juego.cpp
+iostream
+-
 Juego.h
 /home/adrian/CLionProjects/Proyecto2_Datos2/Juego.h
+math.h
+-
 
 /home/adrian/CLionProjects/Proyecto2_Datos2/Juego.h
 gtk/gtk.h
+-
+thread
 -
 
 /usr/include/atk-1.0/atk/atk-enum-types.h
