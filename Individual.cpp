@@ -13,7 +13,7 @@ const string GENES = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOP"\
 "QRSTUVWXYZ 1234567890, .-;:_!\"#%&/()=?@${[]}";
 
 // Target string to be generated
-const string TARGET = "Hola perras";
+const string TARGET = "Yoshi esta con suenio y no se banio hoy";
 #define POPULATION_SIZE 100
 
 int random_num(int start, int end)

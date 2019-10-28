@@ -70,10 +70,37 @@ void on_changed (GtkWidget *widget, GtkWidget* fixed) {
 
 
   GtkWidget *button_20;
+  GtkWidget* image;
     button_20=gtk_button_new();
-    gtk_button_set_label(GTK_BUTTON(button_20),txt.c_str());
+    //gtk_button_set_label(GTK_BUTTON(button_20),txt.c_str());
 
-    gtk_fixed_put(GTK_FIXED(fixed),button_20,x_pos,y_pos);
+    image=gtk_image_new();
+
+    if(strcmp(txt.c_str(),"Arqueros")== 0){
+        gtk_image_set_from_file(GTK_IMAGE(image),"archer.png");
+    }
+    else if(strcmp(txt.c_str(),"Magos")== 0){
+        gtk_image_set_from_file(GTK_IMAGE(image),"magia2.png");
+    }
+    else if(strcmp(txt.c_str(),"Artilleros")== 0){
+        gtk_image_set_from_file(GTK_IMAGE(image),"trt.png");
+    }
+    else if(strcmp(txt.c_str(),"Lanzafuego") == 0){
+        gtk_image_set_from_file(GTK_IMAGE(image),"inferon.png");
+    }
+
+    GdkPixbuf *pixbuf =	gtk_image_get_pixbuf(GTK_IMAGE(image));
+
+    pixbuf = gdk_pixbuf_scale_simple(pixbuf, 50,50, GDK_INTERP_BILINEAR);
+
+    int numx=floor((x_pos-6)/60);
+    int numy=floor((y_pos-128)/62);
+
+    std::cout<<numx<<" efwfw "<<numy<<std::endl;
+
+    gtk_image_set_from_pixbuf(GTK_IMAGE(image), pixbuf);
+    gtk_button_set_image (GTK_BUTTON (button_20), image);
+    gtk_fixed_put(GTK_FIXED(fixed),button_20,6+numx*60,128+numy*62);
     gtk_widget_show_all(fixed);
 
 
