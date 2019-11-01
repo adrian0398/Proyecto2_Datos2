@@ -4,14 +4,17 @@
 
 #ifndef PROYECTO2_DATOS2_PATHFINDING_H
 #define PROYECTO2_DATOS2_PATHFINDING_H
-#define ROW 10
-#define COL 10
+#define ROW 12
+#define COL 12
+
+#include "List_Posiciones.h"
 
 // A C++ Program to implement A* Search Algorithm
 #include<bits/stdc++.h>
 using namespace std;
 class Pathfinding {
 
+    List_Posiciones* listPosiciones=new List_Posiciones;
 
 // Creating a shortcut for int, int pair type
     typedef pair<int, int> Pair;
@@ -87,8 +90,14 @@ class Pathfinding {
         {
             pair<int,int> p = Path.top();
             Path.pop();
+            listPosiciones->insert(p.first,p.second);
             printf("-> (%d,%d) ",p.first,p.second);
         }
+
+        listPosiciones->removeFirstNode();
+        cout<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"<<endl;
+        listPosiciones->display();
+        cout<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"<<endl;
         return;
     }
 

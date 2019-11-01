@@ -71,6 +71,19 @@ public:
 
             return head;
         }
+
+        void removeFirstNode()
+        {
+
+            // Move the head pointer to the next node
+            Node* temp = head;
+            head = head->next;
+
+            delete temp;
+
+        }
+
+
         void insert(int x, int y) {
             Node* new_node=new Node;
             Node* last=head;

@@ -4,8 +4,8 @@
 #include "Matriz.h"
 int main() {
     Matriz matrix;
-    //matrix.mostrarMatriz();
-    matrix.hacerBacktracking();
     matrix.hacerPathfinding();
-    //matrix.escribirMatriz(0, 2);
+    matrix.escribirMatriz(1, 1);
+    matrix.hacerBacktracking();
+    matrix.mostrarMatriz();
 }
