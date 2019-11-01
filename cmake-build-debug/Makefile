@@ -285,6 +285,60 @@ Juego.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.s
 .PHONY : Juego.cpp.s
 
+List_Posiciones.o: List_Posiciones.cpp.o
+
+.PHONY : List_Posiciones.o
+
+# target to build an object file
+List_Posiciones.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o
+.PHONY : List_Posiciones.cpp.o
+
+List_Posiciones.i: List_Posiciones.cpp.i
+
+.PHONY : List_Posiciones.i
+
+# target to preprocess a source file
+List_Posiciones.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.i
+.PHONY : List_Posiciones.cpp.i
+
+List_Posiciones.s: List_Posiciones.cpp.s
+
+.PHONY : List_Posiciones.s
+
+# target to generate assembly for a file
+List_Posiciones.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.s
+.PHONY : List_Posiciones.cpp.s
+
+Matriz.o: Matriz.cpp.o
+
+.PHONY : Matriz.o
+
+# target to build an object file
+Matriz.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o
+.PHONY : Matriz.cpp.o
+
+Matriz.i: Matriz.cpp.i
+
+.PHONY : Matriz.i
+
+# target to preprocess a source file
+Matriz.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.i
+.PHONY : Matriz.cpp.i
+
+Matriz.s: Matriz.cpp.s
+
+.PHONY : Matriz.s
+
+# target to generate assembly for a file
+Matriz.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.s
+.PHONY : Matriz.cpp.s
+
 Pathfinding.o: Pathfinding.cpp.o
 
 .PHONY : Pathfinding.o
@@ -393,6 +447,12 @@ help:
 	@echo "... Juego.o"
 	@echo "... Juego.i"
 	@echo "... Juego.s"
+	@echo "... List_Posiciones.o"
+	@echo "... List_Posiciones.i"
+	@echo "... List_Posiciones.s"
+	@echo "... Matriz.o"
+	@echo "... Matriz.i"
+	@echo "... Matriz.s"
 	@echo "... Pathfinding.o"
 	@echo "... Pathfinding.i"
 	@echo "... Pathfinding.s"

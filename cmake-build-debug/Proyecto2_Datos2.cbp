@@ -154,6 +154,18 @@
 		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Juego.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/List_Posiciones.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/List_Posiciones.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Matriz.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Matriz.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
 		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Pathfinding.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>

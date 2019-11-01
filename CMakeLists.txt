@@ -3,7 +3,7 @@ project(Proyecto2_Datos2)
 
 set(CMAKE_CXX_FLAGS  "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
 
-add_executable(Proyecto2_Datos2 main.cpp Estudiantes.cpp Estudiantes.h Cursos.cpp Cursos.h Tablero.cpp Tablero.h Backtracking.cpp Backtracking.h Pathfinding.cpp Pathfinding.h AlgoritmosGeneticos.cpp AlgoritmosGeneticos.h Juego.cpp Juego.h Individual.cpp Individual.h)
+add_executable(Proyecto2_Datos2 main.cpp Estudiantes.cpp Estudiantes.h Cursos.cpp Cursos.h Tablero.cpp Tablero.h Backtracking.cpp Backtracking.h Pathfinding.cpp Pathfinding.h AlgoritmosGeneticos.cpp AlgoritmosGeneticos.h Juego.cpp Juego.h Individual.cpp Individual.h Matriz.cpp Matriz.h List_Posiciones.cpp List_Posiciones.h)
 
 
 find_package(PkgConfig REQUIRED)

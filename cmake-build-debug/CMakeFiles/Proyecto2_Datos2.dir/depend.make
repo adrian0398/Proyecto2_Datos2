@@ -6,6 +6,7 @@ CMakeFiles/Proyecto2_Datos2.dir/AlgoritmosGeneticos.cpp.o: ../AlgoritmosGenetico
 
 CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o: ../Backtracking.cpp
 CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o: ../Backtracking.h
+CMakeFiles/Proyecto2_Datos2.dir/Backtracking.cpp.o: ../List_Posiciones.h
 
 CMakeFiles/Proyecto2_Datos2.dir/Cursos.cpp.o: ../Cursos.cpp
 CMakeFiles/Proyecto2_Datos2.dir/Cursos.cpp.o: ../Cursos.h
@@ -633,6 +634,16 @@ CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o: /usr/include/pango-1.0/pango/pango.
 CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o: /usr/include/pango-1.0/pango/pangocairo.h
 CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o: /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h
 
+CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o: ../List_Posiciones.cpp
+CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o: ../List_Posiciones.h
+
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o: ../Backtracking.h
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o: ../List_Posiciones.h
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o: ../Matriz.cpp
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o: ../Matriz.h
+CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o: ../Pathfinding.h
+
+CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o: ../List_Posiciones.h
 CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o: ../Pathfinding.cpp
 CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.o: ../Pathfinding.h
 
