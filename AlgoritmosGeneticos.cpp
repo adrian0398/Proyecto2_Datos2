@@ -81,6 +81,7 @@ AlgoritmosGeneticos AlgoritmosGeneticos::mate(AlgoritmosGeneticos par2)
             child_chromosome += to_string(tmp);
         }
     }
+    cout<<"Child chro"<<child_chromosome<<endl;
 
     // create new Individual(offspring) using
     // generated chromosome for offspring
