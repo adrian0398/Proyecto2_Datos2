@@ -3102,6 +3102,7 @@ CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o: /usr/lib/x86_64-linux-gnu/glib-2.0/
 CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o: ../List_Posiciones.cpp
 CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o: ../List_Posiciones.h
 
+CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o: ../Cursos.h
 CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o: ../Estudiantes.h
 CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o: ../List_Posiciones.h
 CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o: ../ListaBalas.cpp

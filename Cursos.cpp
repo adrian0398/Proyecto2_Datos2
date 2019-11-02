@@ -75,3 +75,13 @@ int Cursos::getUpgrade() const {
 void Cursos::setUpgrade(int upgrade) {
     Cursos::upgrade = upgrade;
 }
+
+void Cursos::mejorar(){
+    if(getUpgrade()<4) {
+       setCreditos(getCreditos() + 2);
+       setHoras(getHoras() + 3);
+       setNivelDeExigencia(getNivelDeExigencia() + 1);
+       gtk_label_set_text(GTK_LABEL(label), to_string(getUpgrade()).c_str());
+       setUpgrade(getUpgrade() + 1);
+    }
+}

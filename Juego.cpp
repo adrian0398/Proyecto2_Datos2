@@ -23,16 +23,22 @@ int numero_de_estudiantes;
 int x_pos;
 int y_pos;
 int contador=0;
+
 bool new_oleada=true;
 Matriz matrix;
 int generador_de_zombies=0;
 int numero_de_oleada=1;
 bool balas=true;
+
+bool ganomodo0=false;
+bool ganomodo1=false;
 GtkWidget* oleadas;
 GtkWidget* generacion;
 GtkWidget* reprobados;
 GtkWidget* probabilidad ;
 GtkWidget* cantidad;
+int modo_de_juego;
+int porcentaje_de_ap;
 
 
 
@@ -57,6 +63,7 @@ int matriz[12][12]={ { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 
 ListaCursos* listaCursos=new ListaCursos;
 ListaEstudiantes* listaEstudiantes=new ListaEstudiantes;
+ListaEstudiantes* listaEstudiantes_llegados=new ListaEstudiantes;
 ListaBalas* listaBalas=new ListaBalas;
 GtkWidget* fixed1;
 
@@ -92,8 +99,8 @@ void mover(){
                     //ptr = ptr->next;
                     double cita = atan2(x2 - x1, y2 - y1);
 
-                    double new_x_final = ptr->x_actual + cos(cita);
-                    double new_y_final = ptr->y_actual + sin(cita);
+                    double new_x_final = ptr->x_actual +ptr->getVelocidad()* cos(cita);
+                    double new_y_final = ptr->y_actual +ptr->getVelocidad()* sin(cita);
 
 
                     if (y2 == (int) new_x_final && (x2 - 10 < (int) new_y_final) && (x2 + 10 > (int) new_y_final)) {
@@ -103,6 +110,13 @@ void mover(){
 
                     //cout << "y2 " << y2 << " x2 " << x2 << " y1 " << y1 << " x1 " << x1 << " new x final "
                         // << new_x_final << " new y final " << new_y_final << endl;
+
+                        if(new_y_final<(148)&&(ptr->validaciones>=porcentaje_de_ap) ){
+                            ganomodo0=true;
+                        }
+
+
+
 
 
                     gtk_fixed_move(GTK_FIXED(fixed1), ptr->image, new_x_final, new_y_final);
@@ -131,6 +145,8 @@ void actualizar(){
 Juego::Juego(int porcentajeDeAprobacion) : porcentaje_de_aprobacion(porcentajeDeAprobacion) {
     gtk_main_quit();
     tipo_de_juego=1;
+    modo_de_juego=0;
+    porcentaje_de_ap=porcentaje_de_aprobacion;
     iniciar_juego();
 }
 
@@ -138,7 +154,9 @@ Juego::Juego(int porcentajeDeAprobacion, int numeroDeOleadasAJugar) : porcentaje
                                                                       numero_de_oleadas_a_jugar(numeroDeOleadasAJugar) {
     gtk_main_quit();
     tipo_de_juego=2;
+    porcentaje_de_ap=porcentaje_de_aprobacion;
     iniciar_juego();
+    modo_de_juego=1;
 }
 
 
@@ -237,13 +255,15 @@ void nuevoEstudiante(int i) {
         string chrom=algoritmosGeneticos->mate(listaEstudiantes->GetNth(tmp1), listaEstudiantes->GetNth(tmp2));
         cout<<"crome"<<listaEstudiantes->GetNth(tmp1)->chromosome;
         cout<<"esta es"<< chrom<<endl;
+        string text="Cantidad de Mutaciones "+cantidad_mutaciones;
+        gtk_label_set_text(GTK_LABEL(cantidad),text.c_str());
         int vida=chrom.at(0)- '0';
         int rarq=chrom.at(1)- '0';
         int rart=chrom.at(2)- '0';
         int rmag=chrom.at(3)- '0';
         int rlza=chrom.at(4)- '0';
         int velocidad=chrom.at(5)- '0';
-        listaEstudiantes->insert(10, y + 1, tipo, image, listaPosiciones, pos_en_x, pos_en_y,listaEstudiantes,vida,rarq,rart,rmag,rlza,velocidad ,chrom);
+        listaEstudiantes->insert(10, y + 1, tipo, image, listaPosiciones, pos_en_x, pos_en_y,listaEstudiantes,vida+20,rarq,rart,rmag,rlza,velocidad ,chrom);
     }
 
 
@@ -261,7 +281,22 @@ void colocate_students (GtkWidget *widget, GtkWidget* fixed1) {
 
     if (new_oleada == true) {
         new_oleada = false;
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 3; i++) {
+            cout << "ronda " << i << endl;
+
+            nuevoEstudiante(i);
+            numero_de_estudiantes++;
+
+
+        }
+    }
+}
+void colocate_students3 () {
+
+
+    if (new_oleada == true) {
+        new_oleada = false;
+        for (int i = 0; i < 15; i++) {
             cout << "ronda " << i << endl;
 
             nuevoEstudiante(i);
@@ -349,13 +384,18 @@ void collide_check(){
         int posXBala=x.data->v_int;
         int posYBala=y.data->v_int;
 
-        cout<<"perra de mierda"<<endl;
+        //cout<<"perra de mierda"<<endl;
 
             if(abs(listaBalas->GetNth(i)->objetivo->x_actual-posXBala)<=20&&abs(listaBalas->GetNth(i)->objetivo->y_actual-posYBala)<=22){
-                cout<<"hiiiiiiiiiiiiiiiiiiiiitttted";
-                gtk_widget_set_opacity(listaBalas->GetNth(i)->image,0);
+                //cout<<"hiiiiiiiiiiiiiiiiiiiiitttted";
 
-        }
+                gtk_widget_set_opacity(listaBalas->GetNth(i)->image,0);
+                //listaBalas->GetNth(i)->objetivo->setVida( listaBalas->GetNth(i)->objetivo->getVida()-(listaBalas->GetNth(i)->torre->getCreditos()+listaBalas->GetNth(i)->torre->getHoras()+listaBalas->GetNth(i)->torre->getNivelDeExigencia()));
+                if(listaBalas->GetNth(i)->objetivo->getVida()<=0){
+                    //gtk_widget_set_opacity(listaBalas->GetNth(i)->objetivo->image,0);
+                    //listaBalas->deleteNode(i);
+                }
+            }
     }
 
 }
@@ -408,8 +448,7 @@ ListaEstudiantes* validation(Cursos* cursos){
 }
 gboolean game_loop (GtkWidget *widget, GdkFrameClock *clock, GtkWidget* mo) {
 
-
-
+    if(!ganomodo0&&!ganomodo1) {
         if (contador == 10) {
             actualizar();
             //std::cout<<"entre"<<std::endl;
@@ -418,49 +457,101 @@ gboolean game_loop (GtkWidget *widget, GdkFrameClock *clock, GtkWidget* mo) {
             //listaCursos->display();
 
 
-            if(listaBalas->getsize()>0){
+            if (listaBalas->getsize() > 0) {
                 for (int i = 0; i < listaBalas->getsize(); i++) {
-                  mov_disparo(listaBalas->GetNth(i)->image,listaBalas->GetNth(i)->objetivo->x_actual,listaBalas->GetNth(i)->objetivo->y_actual);
-                  collide_check();
+                    mov_disparo(listaBalas->GetNth(i)->image, listaBalas->GetNth(i)->objetivo->x_actual,
+                                listaBalas->GetNth(i)->objetivo->y_actual);
+                    collide_check();
                 }
             }
 
         }
 
-        //listaEstudiantes->display();
+        if (modo_de_juego == 0) {
 
-        if(numero_de_estudiantes<8){
-    if (generador_de_zombies== 500) {
-        if(listaEstudiantes->getsize()>0) {
-            cout<<"tamanio---------------------"<<listaEstudiantes->getsize()<<endl;
-            for (int i = 0; i < listaCursos->getsize(); i++) {
-                cout<<"entre perras me cago"<<endl;
-                ListaEstudiantes* tmp=validation(listaCursos->GetNth(i));
-                cout<<tmp->getsize()<<"aaaaaaaaaaaa"<<endl;
-                for (int j = 0; j < tmp->getsize(); j++) {
-                    cout<<"entreeeeeeeeeeeeeeeeeee"<<endl;
-                    GtkWidget* imagedisp=disparo(listaCursos->GetNth(i)->x,listaCursos->GetNth(i)->y);
-                    listaBalas->insert(tmp->GetNth(j)->x_actual,tmp->GetNth(j)->y_actual,imagedisp,tmp->GetNth(j));
+
+            if (generador_de_zombies == 500) {
+                if (listaEstudiantes->getsize() > 0) {
+                    //cout << "tamanio---------------------" << listaEstudiantes->getsize() << endl;
+                    for (int i = 0; i < listaCursos->getsize(); i++) {
+                        //cout << "entre perras me cago" << endl;
+                        ListaEstudiantes *tmp = validation(listaCursos->GetNth(i));
+                        cout << tmp->getsize() << "aaaaaaaaaaaa" << endl;
+                        for (int j = 0; j < tmp->getsize(); j++) {
+                            //cout << "entreeeeeeeeeeeeeeeeeee" << endl;
+                            GtkWidget *imagedisp = disparo(listaCursos->GetNth(i)->x, listaCursos->GetNth(i)->y);
+                            listaBalas->insert(tmp->GetNth(j)->x_actual, tmp->GetNth(j)->y_actual, imagedisp,
+                                               tmp->GetNth(j),listaCursos->GetNth(j));
+                        }
+                    }
                 }
+
+                colocate2();
+                std::cout << "100" << std::endl;
+                generador_de_zombies = 0;
             }
+
+            if (modo_de_juego == 1) {
+                if (new_oleada==true) {
+
+                    new_oleada==false;
+                    if (listaEstudiantes->getsize()==0) {
+                        if (listaEstudiantes->getsize() > 0) {
+                            //cout << "tamanio---------------------" << listaEstudiantes->getsize() << endl;
+                            for (int i = 0; i < listaCursos->getsize(); i++) {
+                               // cout << "entre perras me cago" << endl;
+                                ListaEstudiantes *tmp = validation(listaCursos->GetNth(i));
+                                cout << tmp->getsize() << "aaaaaaaaaaaa" << endl;
+                                for (int j = 0; j < tmp->getsize(); j++) {
+                                    //cout << "entreeeeeeeeeeeeeeeeeee" << endl;
+                                    GtkWidget *imagedisp = disparo(listaCursos->GetNth(i)->x,
+                                                                   listaCursos->GetNth(i)->y);
+                                    listaBalas->insert(tmp->GetNth(j)->x_actual, tmp->GetNth(j)->y_actual, imagedisp,
+                                                       tmp->GetNth(j),listaCursos->GetNth(j));
+                                }
+                            }
+                        }
+
+
+
+
+                        colocate_students3();
+                        std::cout << "100" << std::endl;
+                        generador_de_zombies = 0;
+                        numero_de_oleada=numero_de_oleada+1;
+                        if(numero_de_oleada==num_oleadas){
+                            string text="Oleada "+numero_de_oleada;
+                           gtk_label_set_text(GTK_LABEL(oleadas),text.c_str());
+                            ganomodo1==true;
+                        }
+
+                    }
+
+
+
+                    //listaEstudiantes->display();
+
+
+                }
+
+
+
+                //listaCursos->display();
+
+            }
+
+
         }
-
-
-
-
-        //colocate2();
-        std::cout << "100" << std::endl;
-        generador_de_zombies = 0;
-    }
-
-
-
-        //listaCursos->display();
-
-    }
+        generador_de_zombies = generador_de_zombies + 1;
         contador = contador + 1;
-    generador_de_zombies=generador_de_zombies+1;
     }
+    else{
+        GtkWidget* label;
+        label=gtk_label_new("Termino");
+        gtk_fixed_put(GTK_FIXED(fixed1),label,200,200);
+        gtk_widget_show_all(fixed1);
+    }
+}
 
 
 
@@ -485,6 +576,7 @@ void on_key_press2 (GtkWidget *widget, GdkEventKey *event) {
     GdkDeviceManager *device_manager;
     GdkDevice *device;
     Cursos* to_delete=new Cursos;
+    Cursos* to_upgrade=new Cursos;
     int x, y;
     switch (event->keyval) {
         case GDK_KEY_e:
@@ -506,6 +598,8 @@ void on_key_press2 (GtkWidget *widget, GdkEventKey *event) {
             device = gdk_device_manager_get_client_pointer (device_manager);
             gdk_device_get_position (device, NULL, &x, &y);
             cout<<x<<"  "<<y<<endl;
+            to_upgrade=listaCursos->search(floor((x_pos-6)/60),floor((y_pos-128)/62));
+            to_upgrade->mejorar();
             break;
 
 
@@ -534,10 +628,12 @@ void on_changed (GtkWidget *widget, GtkWidget* fixed1) {
 
   GtkWidget *button_20;
   GtkWidget* image;
+    GtkWidget* label;
     button_20=gtk_button_new();
     //gtk_button_set_label(GTK_BUTTON(button_20),txt.c_str());
 
     image=gtk_image_new();
+    label=gtk_label_new("0");
     int pos=0;
 
 
@@ -571,10 +667,11 @@ void on_changed (GtkWidget *widget, GtkWidget* fixed1) {
 
     gtk_image_set_from_pixbuf(GTK_IMAGE(image), pixbuf);
     if(strcmp(txt.c_str(),"")!=0) {
-        listaCursos->insert(numx, numy, txt, image);
+        listaCursos->insert(numx, numy, txt, image,label);
     }
     //gtk_button_set_image (GTK_BUTTON (button_20), image);
     gtk_fixed_put(GTK_FIXED(fixed1),image,6+numx*60,128+numy*62);
+    gtk_fixed_put(GTK_FIXED(fixed1),label,6+numx*60,128+numy*62);
     gtk_widget_show_all(fixed1);
 
 }
@@ -622,16 +719,14 @@ void Juego::iniciar_juego() {
     //gtk_widget_modify_fg (title, GTK_STATE_NORMAL, &color);
 
     oleadas=gtk_label_new("");
-    gtk_label_set_text(GTK_LABEL(oleadas),"Oleadas: ");
+    gtk_label_set_text(GTK_LABEL(oleadas),"");
 
-    generacion=gtk_label_new("");
-    gtk_label_set_text(GTK_LABEL(generacion),"Generacion: ");
 
     reprobados=gtk_label_new("");
     gtk_label_set_text(GTK_LABEL(oleadas),"Reprobados: ");
 
-    probabilidad=gtk_label_new("Probabilidad: ");
-    gtk_label_set_text(GTK_LABEL(oleadas),"Probabilidad de mutaciones: ");
+    probabilidad=gtk_label_new("Probabilidad: 10%");
+    gtk_label_set_text(GTK_LABEL(oleadas),"Probabilidad de mutaciones: 10%");
 
     cantidad=gtk_label_new("Cantidad: ");
     gtk_label_set_text(GTK_LABEL(oleadas),"Cantidad de mutaciones: ");
@@ -657,7 +752,7 @@ void Juego::iniciar_juego() {
 
 
     gtk_fixed_put(GTK_FIXED(fixed1),combobox,0,0);
-    gtk_fixed_put(GTK_FIXED(fixed1),button_3,500,80);
+    gtk_fixed_put(GTK_FIXED(fixed1),button_3,100,80);
     gtk_fixed_put(GTK_FIXED(fixed1),oleadas,380,30);
     gtk_fixed_put(GTK_FIXED(fixed1),generacion,380,50);
 
@@ -682,4 +777,20 @@ void Juego::iniciar_juego() {
 
     gtk_main();
 
+}
+
+int Juego::getPorcentajeDeAprobacion() const {
+    return porcentaje_de_aprobacion;
+}
+
+void Juego::setPorcentajeDeAprobacion(int porcentajeDeAprobacion) {
+    porcentaje_de_aprobacion = porcentajeDeAprobacion;
+}
+
+int Juego::getNumeroDeOleadasAJugar() const {
+    return numero_de_oleadas_a_jugar;
+}
+
+void Juego::setNumeroDeOleadasAJugar(int numeroDeOleadasAJugar) {
+    numero_de_oleadas_a_jugar = numeroDeOleadasAJugar;
 }

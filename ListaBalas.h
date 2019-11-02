@@ -10,6 +10,7 @@
 #include <iostream>
 #include <gtk/gtk.h>
 #include "Estudiantes.h"
+#include "Cursos.h"
 
 using namespace std;
 
@@ -32,6 +33,12 @@ public:
     Balas *next=NULL;
 
     Estudiantes* objetivo;
+
+    const string &getTipoBala() const;
+
+    void setTipoBala(const string &tipoBala);
+
+    Cursos* torre;
 
 };
 
@@ -172,7 +179,7 @@ public:
 
 
 
-    void insert(int x, int y, GtkWidget* image, Estudiantes* objetivo) {
+    void insert(int x, int y, GtkWidget* image, Estudiantes* objetivo, Cursos* tipo) {
 
         Balas* new_node=new Balas;
 
@@ -183,7 +190,7 @@ public:
         new_node->y = y;
         new_node->image=image;
         new_node->objetivo=objetivo;
-
+        new_node->torre=tipo;
         new_node->next = NULL;
 
 
@@ -252,6 +259,41 @@ public:
 
 
 
+
+    void deleteNode( int position)
+    {
+        // If linked list is empty
+        if (head== NULL)
+            return;
+
+        // Store head node
+        Balas* temp = head;
+
+        // If head needs to be removed
+        if (position == 0)
+        {
+            head= temp->next;   // Change head
+            free(temp);               // free old head
+            return;
+        }
+
+        // Find previous node of the node to be deleted
+        for (int i=0; temp!=NULL && i<position-1; i++)
+            temp = temp->next;
+
+        // If position is more than number of ndoes
+        if (temp == NULL || temp->next == NULL)
+            return;
+
+        // Node temp->next is the node to be deleted
+        // Store pointer to the next of node to be deleted
+        Balas *next = temp->next->next;
+
+        // Unlink the node from linked list
+        free(temp->next);  // Free memory
+
+        temp->next = next;  // Unlink the deleted node from list
+    }
 
 
 

@@ -14,6 +14,7 @@
 
 // Valid Genes
 const string GENES = "0123456789";
+int cant_mut=0;
 
 // Target string to be generated
 const string TARGET = "999999";
@@ -27,6 +28,7 @@ bool operator<(const AlgoritmosGeneticos &ind1, const AlgoritmosGeneticos &ind2)
 int AGrandom_num(int start, int end)
 {
     int tmp1, tmp2;
+
 
     std::random_device dev;
     std::mt19937 rng(dev());
@@ -105,6 +107,7 @@ string AlgoritmosGeneticos::mate(Estudiantes* padre1, Estudiantes* padre2)
                 child_chromosome += AGmutated_genes();
 
             }
+            cant_mut++;
             cout<<"sali de aqui";
             }
 

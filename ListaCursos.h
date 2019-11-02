@@ -128,7 +128,7 @@ public:
 
 
 
-    void insert(int x, int y, string tipo,GtkWidget* image) {
+    void insert(int x, int y, string tipo,GtkWidget* image, GtkWidget* label) {
 
         Cursos* new_node=new Cursos;
 
@@ -141,6 +141,32 @@ public:
         new_node->setTipo(tipo);
 
         new_node->image=image;
+        new_node->label=label;
+
+        if(tipo.compare("Arqueros")){
+            new_node->setCreditos(1);
+            new_node->setHoras(2);
+            new_node->setNivelDeExigencia(1);
+
+        }
+        if(tipo.compare("Magos")){
+            new_node->setCreditos(2);
+            new_node->setHoras(4);
+            new_node->setNivelDeExigencia(2);
+
+        }
+        if(tipo.compare("Artilleros")){
+            new_node->setCreditos(3);
+            new_node->setHoras(6);
+            new_node->setNivelDeExigencia(3);
+
+        }
+        if(tipo.compare("Lanzafuego")){
+            new_node->setCreditos(4);
+            new_node->setHoras(8);
+            new_node->setNivelDeExigencia(4);
+
+        }
 
         new_node->next = NULL;
 
@@ -218,6 +244,12 @@ public:
         }
 
     }
+
+
+
+
+
+
 
     Cursos *head=NULL;
 };

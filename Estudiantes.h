@@ -66,6 +66,8 @@ public:
 
     string chromosome;
 
+    int validaciones;
+
     const string &getChromosome() const;
 
     void setChromosome(const string &chromosome);

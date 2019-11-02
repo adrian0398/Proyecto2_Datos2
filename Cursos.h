@@ -11,14 +11,13 @@
 using namespace std;
 class Cursos {
     string tipo;
-    int creditos;
     int horas;
     int nivel_de_exigencia;
     int velocidad_de_evaluacion;
     int alcance_de_evaluacion;
     int rango;
     int tiempo_de_regeneracion_de_la_evaluacion;
-    int upgrade;
+    int upgrade=0;
 public:
     int getUpgrade() const;
 
@@ -28,6 +27,8 @@ public:
     int x;
     GtkWidget* image;
     int y;
+    GtkWidget* label;
+    int creditos;
 public:
     const string &getTipo() const;
 
@@ -60,7 +61,7 @@ public:
     int getTiempoDeRegeneracionDeLaEvaluacion() const;
 
     void setTiempoDeRegeneracionDeLaEvaluacion(int tiempoDeRegeneracionDeLaEvaluacion);
-
+    void mejorar();
 
 };
 

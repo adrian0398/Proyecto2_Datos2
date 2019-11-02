@@ -22,7 +22,18 @@ class Juego {
     int probabilidad_de_inversiones;
     int cantidad_de_inversiones;
     int cantidad_de_estudiantes_aprobados;
+
+public:
     int porcentaje_de_aprobacion;
+    int getPorcentajeDeAprobacion() const;
+
+    void setPorcentajeDeAprobacion(int porcentajeDeAprobacion);
+
+    int getNumeroDeOleadasAJugar() const;
+
+    void setNumeroDeOleadasAJugar(int numeroDeOleadasAJugar);
+
+private:
     int numero_de_oleadas_a_jugar;
 public:
     Juego(int porcentajeDeAprobacion, int numeroDeOleadasAJugar);
