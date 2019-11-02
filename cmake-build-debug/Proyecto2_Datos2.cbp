@@ -160,6 +160,24 @@
 		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/List_Posiciones.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/ListaBalas.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/ListaBalas.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/ListaCursos.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/ListaCursos.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/ListaEstudiantes.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/ListaEstudiantes.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
 		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Matriz.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>

@@ -312,6 +312,87 @@ List_Posiciones.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.s
 .PHONY : List_Posiciones.cpp.s
 
+ListaBalas.o: ListaBalas.cpp.o
+
+.PHONY : ListaBalas.o
+
+# target to build an object file
+ListaBalas.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o
+.PHONY : ListaBalas.cpp.o
+
+ListaBalas.i: ListaBalas.cpp.i
+
+.PHONY : ListaBalas.i
+
+# target to preprocess a source file
+ListaBalas.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.i
+.PHONY : ListaBalas.cpp.i
+
+ListaBalas.s: ListaBalas.cpp.s
+
+.PHONY : ListaBalas.s
+
+# target to generate assembly for a file
+ListaBalas.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.s
+.PHONY : ListaBalas.cpp.s
+
+ListaCursos.o: ListaCursos.cpp.o
+
+.PHONY : ListaCursos.o
+
+# target to build an object file
+ListaCursos.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o
+.PHONY : ListaCursos.cpp.o
+
+ListaCursos.i: ListaCursos.cpp.i
+
+.PHONY : ListaCursos.i
+
+# target to preprocess a source file
+ListaCursos.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.i
+.PHONY : ListaCursos.cpp.i
+
+ListaCursos.s: ListaCursos.cpp.s
+
+.PHONY : ListaCursos.s
+
+# target to generate assembly for a file
+ListaCursos.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.s
+.PHONY : ListaCursos.cpp.s
+
+ListaEstudiantes.o: ListaEstudiantes.cpp.o
+
+.PHONY : ListaEstudiantes.o
+
+# target to build an object file
+ListaEstudiantes.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o
+.PHONY : ListaEstudiantes.cpp.o
+
+ListaEstudiantes.i: ListaEstudiantes.cpp.i
+
+.PHONY : ListaEstudiantes.i
+
+# target to preprocess a source file
+ListaEstudiantes.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.i
+.PHONY : ListaEstudiantes.cpp.i
+
+ListaEstudiantes.s: ListaEstudiantes.cpp.s
+
+.PHONY : ListaEstudiantes.s
+
+# target to generate assembly for a file
+ListaEstudiantes.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.s
+.PHONY : ListaEstudiantes.cpp.s
+
 Matriz.o: Matriz.cpp.o
 
 .PHONY : Matriz.o
@@ -450,6 +531,15 @@ help:
 	@echo "... List_Posiciones.o"
 	@echo "... List_Posiciones.i"
 	@echo "... List_Posiciones.s"
+	@echo "... ListaBalas.o"
+	@echo "... ListaBalas.i"
+	@echo "... ListaBalas.s"
+	@echo "... ListaCursos.o"
+	@echo "... ListaCursos.i"
+	@echo "... ListaCursos.s"
+	@echo "... ListaEstudiantes.o"
+	@echo "... ListaEstudiantes.i"
+	@echo "... ListaEstudiantes.s"
 	@echo "... Matriz.o"
 	@echo "... Matriz.i"
 	@echo "... Matriz.s"

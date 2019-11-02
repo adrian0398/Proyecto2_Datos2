@@ -59,3 +59,8 @@ const string &Estudiantes::getTipo() const {
 void Estudiantes::setTipo(const string &tipo) {
     Estudiantes::tipo = tipo;
 }
+
+
+void Estudiantes::set_properties() {
+
+}

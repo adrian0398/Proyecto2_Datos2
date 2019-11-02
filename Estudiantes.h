@@ -7,7 +7,9 @@
 
 #include <iostream>
 #include <string>
-
+#include <gtk/gtk.h>
+#include "List_Posiciones.h"
+//#include "ListaEstudiantes.h"
 using namespace std;
 
 class Estudiantes {
@@ -17,7 +19,9 @@ class Estudiantes {
     int resistencia_magos;
     int resistencia_arqueros;
     string tipo;
+
 public:
+
     int getVida() const;
 
     void setVida(int vida);
@@ -46,6 +50,22 @@ public:
 
     void setResistenciaLanzafuego(int resistenciaLanzafuego);
 
+    Estudiantes *next=NULL;
+
+    GtkWidget* image;
+    int x;
+    int y;
+    List_Posiciones* mov_estudiante;
+    int x_llegada;
+    int y_llegada;
+    double x_actual;
+    double y_actual;
+    //ListaEstudiantes* listPosiblesPadres;
+
+    void set_properties();
+
+    string chromosome;
+    int fitness;
 private:
     int resistencia_artilleros;
     int resistencia_lanzafuego;

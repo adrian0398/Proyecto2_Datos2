@@ -18,19 +18,30 @@
 
 
 
-void Matriz::hacerBacktracking() {
+List_Posiciones* Matriz::hacerBacktracking(int matriz[12][12], int inicioy, int llegaday) {
 
     Backtracking backtracking;
+    int matriztmp[12][12];
 
-    backtracking.solve(8,1, matriz);
+    for (int i = 0; i < 12; i++) {
 
+        for (int j = 0; j < 12; j++)
 
+            matriztmp[i][j]=matriz[i][j];
 
+    }
+    cout<<"222222222222222222222222222222222222222222222222222222222222222222"<<endl;
+    mostrarMatriz(matriz);
+    cout<<"222222222222222222222222222222222222222222222222222222222222222222"<<endl;
+    escribirMatriz(1,llegaday,matriztmp);
+    cout<<"000000000000000000000000000000000000000000000000000000000000000000"<<endl;
+    mostrarMatriz(matriztmp);
+    cout<<"000000000000000000000000000000000000000000000000000000000000000000"<<endl;
+    return backtracking.solve(10,inicioy, matriztmp);
 }
 
 
-
-void Matriz::hacerPathfinding() {
+List_Posiciones* Matriz::hacerPathfinding(int matriz[12][12], int inicioy, int llegaday) {
 
     // Creating a shortcut for int, int pair type
 
@@ -38,21 +49,17 @@ void Matriz::hacerPathfinding() {
 
     typedef pair<double, pair<int, int>> pPair;
 
-    Pair src = make_pair(8, 1);
+    Pair src = make_pair(10, inicioy);
 
-    Pair dest = make_pair(1, 1);
-
-
-
-
+    Pair dest = make_pair(1, llegaday);
 
     Pathfinding pathfinding;
 
-    pathfinding.aStarSearch(matriz,src,dest);
+    return pathfinding.aStarSearch(matriz,src,dest);
 
 }
 
-void Matriz::escribirMatriz(int x, int y){
+void Matriz::escribirMatriz(int x, int y, int matriz[12][12]){
 
 
 
@@ -72,7 +79,27 @@ void Matriz::escribirMatriz(int x, int y){
 
 }
 
-void Matriz::mostrarMatriz(){
+void Matriz::escribirMatrizgeneral(int x, int y, int matriz[12][12]){
+
+
+
+    for(int i=0;i<12;i++){
+
+        for(int j=0;j<12;j++){
+
+            if (matriz[x][y]==1){
+
+                matriz[x][y]=0;
+
+            }
+
+        }
+
+    }
+
+}
+
+void Matriz::mostrarMatriz(int matriz[12][12]){
 
     cout<<"================================================================================="<<endl;
 

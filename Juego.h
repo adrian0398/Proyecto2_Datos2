@@ -27,6 +27,7 @@ class Juego {
 public:
     Juego(int porcentajeDeAprobacion, int numeroDeOleadasAJugar);
 
+
 public:
     Juego(int porcentajeDeAprobacion);
     void iniciar_juego();

@@ -5,57 +5,21 @@
 #ifndef PROYECTO2_DATOS2_MATRIZ_H
 #define PROYECTO2_DATOS2_MATRIZ_H
 
+#include "List_Posiciones.h"
+
 
 class Matriz {
 
-
-    /* Description of the Grid-
-
-    1--> The cell is not blocked
-
-    0--> The cell is blocked */
-
-
-
-
-
 public:
 
-    int matriz[12][12]={ { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+    void escribirMatriz(int x,int y,int matriz[12][12]);
+    void escribirMatrizgeneral(int x,int y,int matriz[12][12]);
 
-                         { 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0 },
+    List_Posiciones* hacerBacktracking(int matriz[12][12],int inicioy, int llegaday);
 
-                         { 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0 },
+    List_Posiciones* hacerPathfinding(int matriz[12][12],int inicioy, int llegaday);
 
-                         { 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0 },
-
-                         { 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0 },
-
-                         { 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0 },
-
-                         { 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0 },
-
-                         { 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0 },
-
-                         { 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0 },
-
-                         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-
-                         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-
-                         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }};
-
-
-
-
-
-    void escribirMatriz(int x,int y);
-
-    void hacerBacktracking();
-
-    void hacerPathfinding();
-
-    void mostrarMatriz();
+    void mostrarMatriz(int matriz[12][12]);
 };
 
 

@@ -6,6 +6,7 @@
 #define PROYECTO2_DATOS2_CURSOS_H
 
 #include <string>
+#include <gtk/gtk.h>
 
 using namespace std;
 class Cursos {
@@ -24,6 +25,10 @@ public:
 
     void setUpgrade(int upgrade);
 
+    Cursos *next=NULL;
+    int x;
+    GtkWidget* image;
+    int y;
 public:
     const string &getTipo() const;
 

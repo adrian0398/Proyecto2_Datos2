@@ -200,6 +200,45 @@ CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/CLionProjects/Proyecto2_Datos2/List_Posiciones.cpp -o CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.s
 
+CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o: CMakeFiles/Proyecto2_Datos2.dir/flags.make
+CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o: ../ListaCursos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o -c /home/adrian/CLionProjects/Proyecto2_Datos2/ListaCursos.cpp
+
+CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/CLionProjects/Proyecto2_Datos2/ListaCursos.cpp > CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.i
+
+CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/CLionProjects/Proyecto2_Datos2/ListaCursos.cpp -o CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.s
+
+CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o: CMakeFiles/Proyecto2_Datos2.dir/flags.make
+CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o: ../ListaEstudiantes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o -c /home/adrian/CLionProjects/Proyecto2_Datos2/ListaEstudiantes.cpp
+
+CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/CLionProjects/Proyecto2_Datos2/ListaEstudiantes.cpp > CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.i
+
+CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/CLionProjects/Proyecto2_Datos2/ListaEstudiantes.cpp -o CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.s
+
+CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o: CMakeFiles/Proyecto2_Datos2.dir/flags.make
+CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o: ../ListaBalas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o -c /home/adrian/CLionProjects/Proyecto2_Datos2/ListaBalas.cpp
+
+CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/CLionProjects/Proyecto2_Datos2/ListaBalas.cpp > CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.i
+
+CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/CLionProjects/Proyecto2_Datos2/ListaBalas.cpp -o CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.s
+
 # Object files for target Proyecto2_Datos2
 Proyecto2_Datos2_OBJECTS = \
 "CMakeFiles/Proyecto2_Datos2.dir/main.cpp.o" \
@@ -212,7 +251,10 @@ Proyecto2_Datos2_OBJECTS = \
 "CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o" \
 "CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o" \
 "CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o" \
-"CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o"
+"CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o" \
+"CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o" \
+"CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o" \
+"CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o"
 
 # External object files for target Proyecto2_Datos2
 Proyecto2_Datos2_EXTERNAL_OBJECTS =
@@ -228,9 +270,12 @@ Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o
+Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o
+Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o
+Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/build.make
 Proyecto2_Datos2: CMakeFiles/Proyecto2_Datos2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Proyecto2_Datos2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Proyecto2_Datos2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Proyecto2_Datos2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

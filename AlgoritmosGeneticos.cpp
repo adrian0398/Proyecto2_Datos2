@@ -5,6 +5,7 @@
 #include "AlgoritmosGeneticos.h"
 
 
+
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -16,6 +17,11 @@ const string GENES = "0123456789";
 // Target string to be generated
 const string TARGET = "999999";
 #define POPULATION_SIZE 10
+
+bool operator<(const AlgoritmosGeneticos &ind1, const AlgoritmosGeneticos &ind2)
+{
+    return ind1.fitness < ind2.fitness;
+}
 
 int AGrandom_num(int start, int end)
 {
@@ -43,12 +49,13 @@ string AGcreate_gnome()
     int len = TARGET.size();
     string gnome = "";
     for(int i = 0;i<len;i++){
+        //limitarle segun el tipo
         gnome += AGmutated_genes();}
     return gnome;
 }
 
 // Perform mating and produce new offspring
-AlgoritmosGeneticos AlgoritmosGeneticos::mate(AlgoritmosGeneticos par2)
+AlgoritmosGeneticos AlgoritmosGeneticos::mate(Estudiantes* padre1, Estudiantes* padre2)
 {
     // chromosome for offspring
     string child_chromosome = "";
@@ -62,26 +69,21 @@ AlgoritmosGeneticos AlgoritmosGeneticos::mate(AlgoritmosGeneticos par2)
         // if prob is less than 0.45, insert gene
         // from parent 1
         if(p < 0.45)
-            child_chromosome += chromosome[i];
+            child_chromosome += padre1->chromosome;
 
             // if prob is between 0.45 and 0.90, insert
             // gene from parent 2
         else if(p < 0.90)
-            child_chromosome += par2.chromosome[i];
+            child_chromosome += padre2->chromosome;
 
             // otherwise insert random gene(mutate),
             // for maintaining diversity
         else {
-            int tmp1 = chromosome[i]-'0';
-            int tmp2= par2.chromosome[i]-'0';
-            int tmp = (tmp1+tmp2)/2+1;
-            if(tmp>9){
-                tmp=9;
+            child_chromosome += AGmutated_genes();
             }
-            child_chromosome += to_string(tmp);
+
         }
-    }
-    cout<<"Child chro"<<child_chromosome<<endl;
+
 
     // create new Individual(offspring) using
     // generated chromosome for offspring
@@ -104,16 +106,12 @@ int AlgoritmosGeneticos::cal_fitness()
     return fitness;
 };
 
-bool operator<(const AlgoritmosGeneticos &ind1, const AlgoritmosGeneticos &ind2)
-{
-    return ind1.fitness < ind2.fitness;
-}
 
 
-void AlgoritmosGeneticos::run(){
+Estudiantes* AlgoritmosGeneticos::run(Estudiantes* padre1, Estudiantes* padre2){
 
-    srand((unsigned)(time(0)));
 
+    Estudiantes* estudiantes;
     // current generation
     int generation = 0;
 
@@ -121,32 +119,32 @@ void AlgoritmosGeneticos::run(){
     bool found = false;
 
     // create initial population
-    for(int i = 0;i<POPULATION_SIZE;i++)
+   /* for(int i = 0;i<POPULATION_SIZE;i++)
     {
         string gnome = AGcreate_gnome();
         population.push_back(AlgoritmosGeneticos(gnome));
-    }
+    }*/
 
-    while(! found)
-    {
+    //while(! found)
+    //{
         // sort the population in increasing order of fitness score
-        sort(population.begin(), population.end());
+      //  sort(population.begin(), population.end());
 
         // if the individual having lowest fitness score ie.
         // 0 then we know that we have reached to the target
         // and break the loop
-        if(population[0].fitness <= 0)
-        {
-            found = true;
-            break;
-        }
+        //if(population[0].fitness <= 0)
+        //{
+          //  found = true;
+            //break;
+        //}
 
         // Otherwise generate new offsprings for new generation
-        vector<AlgoritmosGeneticos> new_generation;
+        //vector<AlgoritmosGeneticos> new_generation;
 
         // Perform Elitism, that mean 10% of fittest population
         // goes to the next generation
-        int s = (2*POPULATION_SIZE)/100;
+       /* int s = (2*POPULATION_SIZE)/100;
         for(int i = 0;i<s;i++)
             new_generation.push_back(population[i]);
 
@@ -162,19 +160,21 @@ void AlgoritmosGeneticos::run(){
             AlgoritmosGeneticos parent2 = population[r];
             AlgoritmosGeneticos offspring = parent1.mate(parent2);
             new_generation.push_back(offspring);
-        }
-        population = new_generation;
-        cout<< "Generation: " << generation << "\t";
+        }*/
+        //population = new_generation;
+        /*cout<< "Generation: " << generation << "\t";
         cout<< "String: "<< population[0].chromosome <<"\t";
-        cout<< "Fitness: "<< population[0].fitness << "\n";
+        cout<< "Fitness: "<< population[0].fitness << "\n";*/
 
-        generation++;
-    }
+        //generation++;
+    //}
 
 
 
-    cout<< "Generation: " << generation << "\t";
+    /*cout<< "Generation: " << generation << "\t";
     cout<< "String: "<< population[0].chromosome <<"\t";
-    cout<< "Fitness: "<< population[0].fitness << "\n";
+    cout<< "Fitness: "<< population[0].fitness << "\n";*/
+
+ return estudiantes;
 
 };

@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o"
   "CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o"
   "CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o"
+  "CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o"
+  "CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o"
+  "CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o"
   "Proyecto2_Datos2.pdb"
   "Proyecto2_Datos2"
 )

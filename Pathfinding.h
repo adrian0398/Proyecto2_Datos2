@@ -138,7 +138,7 @@ class Pathfinding {
 
 // to destination
 
-    void tracePath(cell cellDetails[][COL], Pair dest)
+    List_Posiciones * tracePath(cell cellDetails[][COL], Pair dest)
 
     {
 
@@ -185,16 +185,7 @@ class Pathfinding {
         }
 
 
-
-        listPosiciones->removeFirstNode();
-
-        cout<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"<<endl;
-
-        listPosiciones->display();
-
-        cout<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"<<endl;
-
-        return;
+        return listPosiciones;
 
     }
 
@@ -208,7 +199,7 @@ public:
 
 // to A* Search Algorithm
 
-    void aStarSearch(int grid[][COL], Pair src, Pair dest)
+    List_Posiciones* aStarSearch(int grid[][COL], Pair src, Pair dest)
 
     {
 
@@ -220,7 +211,7 @@ public:
 
             printf ("Source is invalid\n");
 
-            return;
+            return NULL;
 
         }
 
@@ -234,7 +225,7 @@ public:
 
             printf ("Destination is invalid\n");
 
-            return;
+            return NULL;
 
         }
 
@@ -250,7 +241,7 @@ public:
 
             printf ("Source or the destination is blocked\n");
 
-            return;
+            return NULL;
 
         }
 
@@ -264,7 +255,7 @@ public:
 
             printf ("We are already at the destination\n");
 
-            return;
+            return NULL;
 
         }
 
@@ -470,7 +461,7 @@ public:
 
                     foundDest = true;
 
-                    return;
+                    return listPosiciones;
 
                 }
 
@@ -572,7 +563,7 @@ public:
 
                     foundDest = true;
 
-                    return;
+                    return listPosiciones;
 
                 }
 
@@ -670,7 +661,7 @@ public:
 
                     foundDest = true;
 
-                    return;
+                    return listPosiciones;
 
                 }
 
@@ -774,7 +765,7 @@ public:
 
                     foundDest = true;
 
-                    return;
+                    return listPosiciones;
 
                 }
 
@@ -878,7 +869,7 @@ public:
 
                     foundDest = true;
 
-                    return;
+                    return listPosiciones;
 
                 }
 
@@ -982,7 +973,7 @@ public:
 
                     foundDest = true;
 
-                    return;
+                    return listPosiciones;
 
                 }
 
@@ -1082,7 +1073,7 @@ public:
 
                     foundDest = true;
 
-                    return;
+                    return listPosiciones;
 
                 }
 
@@ -1186,7 +1177,7 @@ public:
 
                     foundDest = true;
 
-                    return;
+                    return listPosiciones;
 
                 }
 
@@ -1276,7 +1267,7 @@ public:
 
 
 
-        return;
+        return listPosiciones;
 
     }
 

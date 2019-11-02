@@ -1,13 +1,15 @@
 //
-// Created by adrian on 31/10/19.
+// Created by adrian on 1/11/19.
 //
 
-#ifndef PROYECTO2_DATOS2_LIST_POSICIONES_H
-#define PROYECTO2_DATOS2_LIST_POSICIONES_H
+#ifndef PROYECTO2_DATOS2_LISTABALAS_H
+#define PROYECTO2_DATOS2_LISTABALAS_H
 
 #include <string>
 
 #include <iostream>
+#include <gtk/gtk.h>
+#include "Estudiantes.h"
 
 using namespace std;
 
@@ -19,13 +21,17 @@ using namespace std;
 
 
 
-class Node {
+class Balas {
 
 public:
 
     int x, y;
 
-    Node *next=NULL;
+    GtkWidget* image;
+
+    Balas *next=NULL;
+
+    Estudiantes* objetivo;
 
 };
 
@@ -35,7 +41,7 @@ public:
 
 */
 
-class List_Posiciones {
+class ListaBalas {
 
 
 
@@ -53,7 +59,7 @@ public:
 
     void display(){
 
-        Node* ptr=new Node;
+        Balas* ptr=new Balas;
 
         ptr = head;
 
@@ -92,9 +98,9 @@ public:
 
 
 public:
-    Node *head=NULL;
+    Balas *head=NULL;
 
-    Node* removeLastNode()
+    Balas* removeLastNode()
 
     {
 
@@ -116,7 +122,7 @@ public:
 
         // Find the second last node
 
-        Node* second_last = head;
+        Balas* second_last = head;
 
         while (second_last->next->next != NULL)
 
@@ -150,7 +156,7 @@ public:
 
         // Move the head pointer to the next node
 
-        Node* temp = head;
+        Balas* temp = head;
 
         head = head->next;
 
@@ -166,15 +172,17 @@ public:
 
 
 
-    void insert(int x, int y) {
+    void insert(int x, int y, GtkWidget* image, Estudiantes* objetivo) {
 
-        Node* new_node=new Node;
+        Balas* new_node=new Balas;
 
-        Node* last=head;
+        Balas* last=head;
 
         new_node->x = x;
 
         new_node->y = y;
+        new_node->image=image;
+        new_node->objetivo=objetivo;
 
         new_node->next = NULL;
 
@@ -210,10 +218,10 @@ public:
 
     }
 
-    Node* GetNth( int index) {
+    Balas* GetNth( int index) {
         if (head != NULL) {
 
-            Node *current = head;
+            Balas *current = head;
 
             // the index of the
             // node we're currently
@@ -230,16 +238,16 @@ public:
     }
 
 
-        int getsize() {
-            int size = 0;
-            Node *ptr = new Node;
-            ptr = head;
-            while (ptr != NULL) {
-                ptr = ptr->next;
-                size = size + 1;
-            }
-            return size;
+    int getsize() {
+        int size = 0;
+        Balas *ptr = new Balas;
+        ptr = head;
+        while (ptr != NULL) {
+            ptr = ptr->next;
+            size = size + 1;
         }
+        return size;
+    }
 
 
 
@@ -252,4 +260,4 @@ public:
 
 
 
-#endif //PROYECTO2_DATOS2_LIST_POSICIONES_H
+#endif //PROYECTO2_DATOS2_LISTABALAS_H

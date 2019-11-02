@@ -181,8 +181,6 @@ GtkWindow intro_window(){
 
 
 int main() {
-    AlgoritmosGeneticos* algoritmosGeneticos;
-    algoritmosGeneticos->run();
    GtkWindow intro=intro_window();
    std::cout << "Hello, World!" << std::endl;
    Individual* i;

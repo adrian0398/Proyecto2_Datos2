@@ -2,65 +2,28 @@
 // Created by adrian on 31/10/19.
 //
 
-#ifndef PROYECTO2_DATOS2_LIST_POSICIONES_H
-#define PROYECTO2_DATOS2_LIST_POSICIONES_H
-
+#ifndef PROYECTO2_DATOS2_LISTACURSOS_H
+#define PROYECTO2_DATOS2_LISTACURSOS_H
 #include <string>
 
 #include <iostream>
 
+#include <gtk/gtk.h>
+#include "Cursos.h"
 using namespace std;
 
-/*!
-
-*Node that saves the data of the movie
-
-*/
-
-
-
-class Node {
-
-public:
-
-    int x, y;
-
-    Node *next=NULL;
-
-};
-
-/*!
-
-*Linked list to save all the movies get from the csv
-
-*/
-
-class List_Posiciones {
-
-
-
-    /*!
-
-   *Linked list method to display the linked list
-
-   * Use tmp node to display each node until linked list is NULL
-
-
-
-   */
-
+class ListaCursos {
 public:
 
     void display(){
 
-        Node* ptr=new Node;
+        Cursos* ptr=new Cursos;
 
         ptr = head;
 
         while (ptr != NULL) {
 
-            std::cout<<"Pos X: "<< ptr->x<<"Pos Y: "<<ptr->y <<" "<<endl;
-
+            std::cout<<"tipo "<<ptr->getTipo()<<"Pos X: "<< ptr->x<<"Pos Y: "<<ptr->y <<" "<<endl;
             ptr = ptr->next;
 
         }
@@ -92,9 +55,8 @@ public:
 
 
 public:
-    Node *head=NULL;
 
-    Node* removeLastNode()
+    Cursos* removeLastNode()
 
     {
 
@@ -116,7 +78,7 @@ public:
 
         // Find the second last node
 
-        Node* second_last = head;
+        Cursos* second_last = head;
 
         while (second_last->next->next != NULL)
 
@@ -150,7 +112,7 @@ public:
 
         // Move the head pointer to the next node
 
-        Node* temp = head;
+        Cursos* temp = head;
 
         head = head->next;
 
@@ -166,15 +128,19 @@ public:
 
 
 
-    void insert(int x, int y) {
+    void insert(int x, int y, string tipo,GtkWidget* image) {
 
-        Node* new_node=new Node;
+        Cursos* new_node=new Cursos;
 
-        Node* last=head;
+        Cursos* last=head;
 
         new_node->x = x;
 
         new_node->y = y;
+
+        new_node->setTipo(tipo);
+
+        new_node->image=image;
 
         new_node->next = NULL;
 
@@ -210,46 +176,38 @@ public:
 
     }
 
-    Node* GetNth( int index) {
-        if (head != NULL) {
+    Cursos* GetNth( int index)
+    {
 
-            Node *current = head;
+        Cursos* curr = head;
 
-            // the index of the
-            // node we're currently
-            // looking at
-            int count = 0;
-            while (current != NULL) {
-                if (count == index)
-                    return (current);
-                count++;
-                current = current->next;
-            }
+        // the index of the
+        // node we're currently
+        // looking at
+        int count = 0;
+        while (curr != NULL)
+        {
+            if (count == index)
+                return(curr);
+            count++;
+            curr = curr->next;
         }
 
     }
 
-
-        int getsize() {
-            int size = 0;
-            Node *ptr = new Node;
-            ptr = head;
-            while (ptr != NULL) {
-                ptr = ptr->next;
-                size = size + 1;
-            }
-            return size;
+    int getsize() {
+        int size=0;
+        Cursos* ptr=new Cursos;
+        ptr = head;
+        while (ptr != NULL) {
+            ptr = ptr->next;
+            size=size+1;
         }
+        return size;
+    }
 
-
-
-
-
-
-
-
+    Cursos *head=NULL;
 };
 
 
-
-#endif //PROYECTO2_DATOS2_LIST_POSICIONES_H
+#endif //PROYECTO2_DATOS2_LISTACURSOS_H
