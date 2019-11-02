@@ -60,14 +60,6 @@ void Cursos::setRango(int rango) {
     Cursos::rango = rango;
 }
 
-int Cursos::getTiempoDeRegeneracionDeLaEvaluacionEspecial() const {
-    return tiempo_de_regeneracion_de_la_evaluacion_especial;
-}
-
-void Cursos::setTiempoDeRegeneracionDeLaEvaluacionEspecial(int tiempoDeRegeneracionDeLaEvaluacionEspecial) {
-    tiempo_de_regeneracion_de_la_evaluacion_especial = tiempoDeRegeneracionDeLaEvaluacionEspecial;
-}
-
 int Cursos::getTiempoDeRegeneracionDeLaEvaluacion() const {
     return tiempo_de_regeneracion_de_la_evaluacion;
 }

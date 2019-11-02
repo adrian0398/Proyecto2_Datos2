@@ -17,7 +17,6 @@ class Cursos {
     int velocidad_de_evaluacion;
     int alcance_de_evaluacion;
     int rango;
-    int tiempo_de_regeneracion_de_la_evaluacion_especial;
     int tiempo_de_regeneracion_de_la_evaluacion;
     int upgrade;
 public:
@@ -57,10 +56,6 @@ public:
     int getRango() const;
 
     void setRango(int rango);
-
-    int getTiempoDeRegeneracionDeLaEvaluacionEspecial() const;
-
-    void setTiempoDeRegeneracionDeLaEvaluacionEspecial(int tiempoDeRegeneracionDeLaEvaluacionEspecial);
 
     int getTiempoDeRegeneracionDeLaEvaluacion() const;
 

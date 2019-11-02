@@ -14,7 +14,11 @@
 #include <time.h>
 #include <random>
 #include <gobject/gvalue.h>
-
+int num_oleadas=0;
+int numg_eneracion=0;
+int cant_repobados=0;
+double probabilidad_mutaciones=0.0;
+int cantidad_mutaciones=0;
 int numero_de_estudiantes;
 int x_pos;
 int y_pos;
@@ -22,7 +26,6 @@ int contador=0;
 bool new_oleada=true;
 Matriz matrix;
 int generador_de_zombies=0;
-ListaEstudiantes* fittesst=new ListaEstudiantes;
 int numero_de_oleada=1;
 bool balas=true;
 GtkWidget* oleadas;
@@ -139,111 +142,133 @@ Juego::Juego(int porcentajeDeAprobacion, int numeroDeOleadasAJugar) : porcentaje
 }
 
 
-void nuevoEstudiante(int i){
+void nuevoEstudiante(int i) {
 
-    int y=rand()%(11-1);
-    GtkWidget* image=gtk_image_new();
-    int pos=0;
+    int y = rand() % (11 - 1);
+    GtkWidget *image = gtk_image_new();
+    int pos = 0;
     std::string tipo;
-    int tipo_num=1+rand()%(5-1);
-    int yllegada=rand()%(11-1);
+    int tipo_num = 1 + rand() % (5 - 1);
+    int yllegada = rand() % (11 - 1);
 
     //cout<<y<<" tipo_num "<<tipo_num<<endl;
 
     switch (tipo_num) {
-        case 1: gtk_image_set_from_file(GTK_IMAGE(image),"ogros.png");
-        tipo="Ogros";
+        case 1:
+            gtk_image_set_from_file(GTK_IMAGE(image), "ogros.png");
+            tipo = "Ogros";
             break;
-        case 2:  gtk_image_set_from_file(GTK_IMAGE(image),"hw.png");
-            tipo="ElfosOscuros";
+        case 2:
+            gtk_image_set_from_file(GTK_IMAGE(image), "hw.png");
+            tipo = "ElfosOscuros";
             break;
-        case 3: gtk_image_set_from_file(GTK_IMAGE(image),"merc.png");;
-            tipo="Harpias";
+        case 3:
+            gtk_image_set_from_file(GTK_IMAGE(image), "merc.png");;
+            tipo = "Harpias";
             break;
-        case 4:  gtk_image_set_from_file(GTK_IMAGE(image),"mercenario.png");
-            tipo="Mercenarios";
+        case 4:
+            gtk_image_set_from_file(GTK_IMAGE(image), "mercenario.png");
+            tipo = "Mercenarios";
             break;
     }
 
-   int pos_en_x=60*(y)+6;
-    int pos_en_y=62*9+128;
+    int pos_en_x = 60 * (y) + 6;
+    int pos_en_y = 62 * 9 + 128;
 
-    GdkPixbuf *pixbuf =	gtk_image_get_pixbuf(GTK_IMAGE(image));
+    GdkPixbuf *pixbuf = gtk_image_get_pixbuf(GTK_IMAGE(image));
 
-    pixbuf = gdk_pixbuf_scale_simple(pixbuf, 60,60, GDK_INTERP_BILINEAR);
+    pixbuf = gdk_pixbuf_scale_simple(pixbuf, 60, 60, GDK_INTERP_BILINEAR);
     gtk_image_set_from_pixbuf(GTK_IMAGE(image), pixbuf);
 
     //cout<<"valores"<<y<<" y "<<yllegada<<endl;
     //matrix.hacerBacktracking(matriz,y+1,yllegada+1);
-    List_Posiciones* listaPosiciones;
+    List_Posiciones *listaPosiciones;
 
-    if(i>=13){
-        listaPosiciones=matrix.hacerPathfinding(matriz,y+1,yllegada+1);
-      //matrix.hacerPathfinding(matriz,y,yllegada);
+    if (i >= 13) {
+        listaPosiciones = matrix.hacerPathfinding(matriz, y + 1, yllegada + 1);
+        //matrix.hacerPathfinding(matriz,y,yllegada);
+    } else {
+        listaPosiciones = matrix.hacerBacktracking(matriz, y + 1, yllegada + 1);
+        //matrix.hacerBacktracking(matriz,y,yllegada);
     }
-    else{
-        listaPosiciones=matrix.hacerBacktracking(matriz,y+1,yllegada+1);
-       //matrix.hacerBacktracking(matriz,y,yllegada);
-    }
 
 
-    gtk_fixed_put(GTK_FIXED(fixed1),image,pos_en_x,pos_en_y);
+    gtk_fixed_put(GTK_FIXED(fixed1), image, pos_en_x, pos_en_y);
     gtk_widget_show_all(fixed1);
 
-    listaEstudiantes->insert(10,y+1,tipo,image,listaPosiciones,pos_en_x,pos_en_y,listaEstudiantes);
-    listaEstudiantes->sorting();
 
-    fittesst=new ListaEstudiantes;
-
-
-       for (int i = 0; i < listaEstudiantes->getsize() * 0.8; i++) {
-            fittesst->insert(listaEstudiantes->GetNth(i)->x, listaEstudiantes->GetNth(i)->y,
-                             listaEstudiantes->GetNth(i)->getTipo(), listaEstudiantes->GetNth(i)->image,
-                             listaEstudiantes->GetNth(i)->mov_estudiante, listaEstudiantes->GetNth(i)->x_actual,
-                             listaEstudiantes->GetNth(i)->y_actual, listaEstudiantes);
-
+    if (listaEstudiantes->getsize() < 4) {
+        if(tipo.compare("Ogros")==0){
+            listaEstudiantes->insert(10, y + 1, tipo, image, listaPosiciones, pos_en_x, pos_en_y, listaEstudiantes,1,3,1,1,1,1,"131111");
 
         }
+        if(tipo.compare("ElfosOscuros")==0){
+            listaEstudiantes->insert(10, y + 1, tipo, image, listaPosiciones, pos_en_x, pos_en_y, listaEstudiantes,2,3,1,1,3,2,"231132");
 
+        }
+        if(tipo.compare("Harpias")==0){
+            listaEstudiantes->insert(10, y + 1, tipo, image, listaPosiciones, pos_en_x, pos_en_y, listaEstudiantes,3,9,2,9,2,2,"392922");
 
- if(fittesst->getsize()>2) {
-     std::random_device rd;
-     std::mt19937 mt(rd());
-     std::uniform_real_distribution<double> dist(0, fittesst->getsize() - 1);
-
-     int tmp1= dist(mt);
-     int tmp2=tmp1;
-
-     while(tmp1==tmp2){
-         tmp2 = dist(mt);
-
-     }
-
-
-
-
-   //  cout << fittesst->getsize() << "---------------" << tmp1 << " " << tmp2<<endl;
-
-
-      AlgoritmosGeneticos *algoritmosGeneticos;
-      algoritmosGeneticos->run(fittesst->GetNth(tmp1), fittesst->GetNth(tmp2));
+        }
+        if(tipo.compare("Mercenarios")==0){
+            listaEstudiantes->insert(10, y + 1, tipo, image, listaPosiciones, pos_en_x, pos_en_y, listaEstudiantes,3,3,3,1,3,3,"333133");
+        }
     }
-}
+    else{
+        listaEstudiantes->sorting();
+
+        int tmp1, tmp2;
+
+        std::random_device dev;
+        std::mt19937 rng(dev());
+        std::uniform_int_distribution<std::mt19937::result_type> dist6(0,listaEstudiantes->getsize()-1);
+
+        tmp1=dist6(rng);
+        tmp2=tmp1;
+
+        while (tmp1 == tmp2) {
+            tmp2 = dist6(rng);
+
+        }
+        cout<<"tmps"<<tmp1<<" "<<tmp2<<endl;
+        AlgoritmosGeneticos *algoritmosGeneticos;
+        cout<<"valores reales"<<endl;
+
+        string chrom=algoritmosGeneticos->mate(listaEstudiantes->GetNth(tmp1), listaEstudiantes->GetNth(tmp2));
+        cout<<"crome"<<listaEstudiantes->GetNth(tmp1)->chromosome;
+        cout<<"esta es"<< chrom<<endl;
+        int vida=chrom.at(0)- '0';
+        int rarq=chrom.at(1)- '0';
+        int rart=chrom.at(2)- '0';
+        int rmag=chrom.at(3)- '0';
+        int rlza=chrom.at(4)- '0';
+        int velocidad=chrom.at(5)- '0';
+        listaEstudiantes->insert(10, y + 1, tipo, image, listaPosiciones, pos_en_x, pos_en_y,listaEstudiantes,vida,rarq,rart,rmag,rlza,velocidad ,chrom);
+    }
+
+
+
+
+
+    }
+
+
+
+
 
 void colocate_students (GtkWidget *widget, GtkWidget* fixed1) {
 
 
-    if (new_oleada == true){
+    if (new_oleada == true) {
         new_oleada = false;
-        for (int i = 0; i < 3; i++) {
-            cout<<"ronda "<<i<<endl;
+        for (int i = 0; i < 20; i++) {
+            cout << "ronda " << i << endl;
 
             nuevoEstudiante(i);
             numero_de_estudiantes++;
 
 
         }
-
     }
 }
 void colocate2(){
@@ -372,7 +397,7 @@ ListaEstudiantes* validation(Cursos* cursos){
             enrango->insert(listaEstudiantes->GetNth(i)->x, listaEstudiantes->GetNth(i)->y,
                             listaEstudiantes->GetNth(i)->getTipo(), listaEstudiantes->GetNth(i)->image,
                             listaEstudiantes->GetNth(i)->mov_estudiante, listaEstudiantes->GetNth(i)->x_actual,
-                            listaEstudiantes->GetNth(i)->y_actual, listaEstudiantes);
+                            listaEstudiantes->GetNth(i)->y_actual, listaEstudiantes,listaEstudiantes->GetNth(i)->getVida(),listaEstudiantes->GetNth(i)->getResistenciaArqueros(),listaEstudiantes->GetNth(i)->getResistenciaArtilleros(),listaEstudiantes->GetNth(i)->getResistenciaMagos(),listaEstudiantes->GetNth(i)->getResistenciaLanzafuego(),listaEstudiantes->GetNth(i)->getVelocidad(),listaEstudiantes->GetNth(i)->getChromosome());
         }
 
     }
@@ -624,10 +649,6 @@ void Juego::iniciar_juego() {
     gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Artilleros");
     gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Lanzafuego");
 
-    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Arqueros");
-    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Magos");
-    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Artilleros");
-
 
 
     gtk_widget_set_size_request(button_1,50,50);
@@ -635,7 +656,8 @@ void Juego::iniciar_juego() {
     gtk_widget_set_size_request(button_3,110,40);
 
 
-    //gtk_fixed_put(GTK_FIXED(fixed1),button_1,50,80);
+    gtk_fixed_put(GTK_FIXED(fixed1),combobox,0,0);
+    gtk_fixed_put(GTK_FIXED(fixed1),button_3,500,80);
     gtk_fixed_put(GTK_FIXED(fixed1),oleadas,380,30);
     gtk_fixed_put(GTK_FIXED(fixed1),generacion,380,50);
 

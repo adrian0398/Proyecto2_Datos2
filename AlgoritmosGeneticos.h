@@ -9,13 +9,10 @@ using namespace std;
 class AlgoritmosGeneticos {
 public:
 
-    string chromosome;
-    int fitness;
-    AlgoritmosGeneticos(string chromosome);
-    AlgoritmosGeneticos mate(Estudiantes* padre1, Estudiantes* padre2);
-    int cal_fitness();
 
-    Estudiantes* run(Estudiantes* padre1, Estudiantes* padre2);
+    int fitness;
+    string mate(Estudiantes* padre1, Estudiantes* padre2);
+    int cal_fitness(string chromo);
 
 
 };

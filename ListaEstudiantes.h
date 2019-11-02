@@ -31,8 +31,6 @@ public:
 
     }
 
-
-
     /*!
 
 *Linked list method to insert at the end of the list.
@@ -46,14 +44,7 @@ public:
 @param[in]  IMBDlink   IMDB link to search the url elements
 
 @param[in]  director   director  of the movie to be inserted
-
-
-
-
-
-*/
-
-
+     */
 
 public:
 
@@ -97,19 +88,13 @@ public:
 
         second_last->next = NULL;
 
-
-
         return head;
 
     }
 
-
-
     void removeFirstNode()
 
     {
-
-
 
         // Move the head pointer to the next node
 
@@ -117,19 +102,13 @@ public:
 
         head = head->next;
 
-
-
         delete temp;
-
-
 
     }
 
+    void insert(int x, int y, string tipo,GtkWidget* image, List_Posiciones* listPosiciones, double actualx, double actualy, ListaEstudiantes* listaEstudiantes, int vida, int resistenciaarq, int resistenciaart, int resistenciamagos, int resistencialanza, int velocidad, string chromosome ) {
 
 
-
-
-    void insert(int x, int y, string tipo,GtkWidget* image, List_Posiciones* listPosiciones, double actualx, double actualy, ListaEstudiantes* listaEstudiantes) {
 
         Estudiantes* new_node=new Estudiantes;
 
@@ -146,14 +125,19 @@ public:
 
         new_node->x_actual=actualx;
         new_node->y_actual=actualy;
+        new_node->setChromosome(chromosome);
+        new_node->setVelocidad(velocidad);
+        new_node->setVida(vida);
+        new_node->setResistenciaMagos(resistenciamagos);
+        new_node->setResistenciaArtilleros(resistenciaart);
+        new_node->setResistenciaArqueros(resistenciaarq);
+        new_node->setResistenciaLanzafuego(resistencialanza);
+
+
 
         //new_node->listPosiblesPadres=listaEstudiantes;
 
         new_node->next = NULL;
-
-
-
-
 
         if (head == NULL)
 
@@ -234,11 +218,6 @@ public:
             }
         }
     }
-
-
-
-
-
     Estudiantes *head=NULL;
 };
 

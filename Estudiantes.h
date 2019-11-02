@@ -65,6 +65,11 @@ public:
     void set_properties();
 
     string chromosome;
+
+    const string &getChromosome() const;
+
+    void setChromosome(const string &chromosome);
+
     int fitness;
 private:
     int resistencia_artilleros;
