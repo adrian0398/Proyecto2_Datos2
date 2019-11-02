@@ -206,6 +206,19 @@ public:
         return size;
     }
 
+    Cursos* search(int x, int y){
+        Cursos* tmp=head;
+        while (tmp != NULL){
+            if (tmp->x==x && tmp->y==y)
+            {
+                printf("key found\n");
+                return tmp;
+            }
+            tmp= tmp->next;
+        }
+
+    }
+
     Cursos *head=NULL;
 };
 

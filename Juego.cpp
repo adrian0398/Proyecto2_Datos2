@@ -25,6 +25,13 @@ int generador_de_zombies=0;
 ListaEstudiantes* fittesst=new ListaEstudiantes;
 int numero_de_oleada=1;
 bool balas=true;
+GtkWidget* oleadas;
+GtkWidget* generacion;
+GtkWidget* reprobados;
+GtkWidget* probabilidad ;
+GtkWidget* cantidad;
+
+
 
         /* Description of the Grid-
         1--> The cell is not blocked
@@ -396,9 +403,7 @@ gboolean game_loop (GtkWidget *widget, GdkFrameClock *clock, GtkWidget* mo) {
         }
 
         //listaEstudiantes->display();
-        cout<<"Balas"<<endl;
-        listaBalas->display();
-        cout<<"Balas1"<<endl;
+
         if(numero_de_estudiantes<8){
     if (generador_de_zombies== 500) {
         if(listaEstudiantes->getsize()>0) {
@@ -440,7 +445,6 @@ void on_key_press (GtkWidget *widget, GdkEventButton *event, GtkWidget* combobox
 
     if(5<=event->x && event->x<=610 && 125 <=event->y&&event->y<=750) {
 
-
         std::cout << "entre" << event->x << "posy" << event->y << std::endl;
         gtk_widget_set_opacity(combobox,1);
         x_pos=event->x;
@@ -448,6 +452,47 @@ void on_key_press (GtkWidget *widget, GdkEventButton *event, GtkWidget* combobox
 
     }
 
+
+}
+
+void on_key_press2 (GtkWidget *widget, GdkEventKey *event) {
+    GdkDisplay *display;
+    GdkDeviceManager *device_manager;
+    GdkDevice *device;
+    Cursos* to_delete=new Cursos;
+    int x, y;
+    switch (event->keyval) {
+        case GDK_KEY_e:
+            display = gdk_display_get_default ();
+            device_manager = gdk_display_get_device_manager (display);
+            device = gdk_device_manager_get_client_pointer (device_manager);
+            gdk_window_get_device_position(gtk_widget_get_window(widget),device, &x, &y, NULL);
+            cout<<x<<"  "<<y<<endl;
+            to_delete=listaCursos->search(floor((x_pos-6)/60),floor((y_pos-128)/62));
+
+
+
+            gtk_widget_destroy(to_delete->image);
+            break;
+
+        case GDK_KEY_a:
+            display = gdk_display_get_default ();
+            device_manager = gdk_display_get_device_manager (display);
+            device = gdk_device_manager_get_client_pointer (device_manager);
+            gdk_device_get_position (device, NULL, &x, &y);
+            cout<<x<<"  "<<y<<endl;
+            break;
+
+
+    }
+
+}
+
+void deleteCurso(GtkWidget *widget, GdkEventButton *event){
+    cout<<"hola berros"<<endl;
+    if(5<=event->x && event->x<=610 && 125 <=event->y&&event->y<=750) {
+        cout<<"hola berros"<<endl;
+    }
 
 }
 
@@ -519,6 +564,8 @@ void Juego::iniciar_juego() {
     GtkWidget *button_3;
     GtkWidget *title;
     GtkWidget *combobox;
+    GtkWidget *comboboxcursos;
+    GtkWidget *comboboxupgrades;
 
 
     gtk_init(NULL, NULL);
@@ -549,7 +596,20 @@ void Juego::iniciar_juego() {
     //gdk_color_parse ("white", &color);
     //gtk_widget_modify_fg (title, GTK_STATE_NORMAL, &color);
 
+    oleadas=gtk_label_new("");
+    gtk_label_set_text(GTK_LABEL(oleadas),"Oleadas: ");
 
+    generacion=gtk_label_new("");
+    gtk_label_set_text(GTK_LABEL(generacion),"Generacion: ");
+
+    reprobados=gtk_label_new("");
+    gtk_label_set_text(GTK_LABEL(oleadas),"Reprobados: ");
+
+    probabilidad=gtk_label_new("Probabilidad: ");
+    gtk_label_set_text(GTK_LABEL(oleadas),"Probabilidad de mutaciones: ");
+
+    cantidad=gtk_label_new("Cantidad: ");
+    gtk_label_set_text(GTK_LABEL(oleadas),"Cantidad de mutaciones: ");
 
 
     button_1=gtk_button_new();
@@ -564,6 +624,9 @@ void Juego::iniciar_juego() {
     gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Artilleros");
     gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Lanzafuego");
 
+    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Arqueros");
+    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Magos");
+    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combobox), "Artilleros");
 
 
 
@@ -573,14 +636,23 @@ void Juego::iniciar_juego() {
 
 
     //gtk_fixed_put(GTK_FIXED(fixed1),button_1,50,80);
-    gtk_fixed_put(GTK_FIXED(fixed1),button_3,500,80);
-    gtk_fixed_put(GTK_FIXED(fixed1),combobox,0,0);
+    gtk_fixed_put(GTK_FIXED(fixed1),oleadas,380,30);
+    gtk_fixed_put(GTK_FIXED(fixed1),generacion,380,50);
+
+    gtk_fixed_put(GTK_FIXED(fixed1),reprobados,380,70);
+    gtk_fixed_put(GTK_FIXED(fixed1),probabilidad,380,80);
+
+    gtk_fixed_put(GTK_FIXED(fixed1),cantidad,380,100);
+
+
     gtk_widget_set_opacity(combobox,0);
     int i=432133;
 
 
     gtk_widget_add_tick_callback(fixed1, reinterpret_cast<GtkTickCallback>(game_loop), NULL, NULL);
     g_signal_connect (window, "button_press_event", G_CALLBACK (on_key_press), combobox);
+    g_signal_connect (window, "key_press_event", G_CALLBACK (on_key_press2),NULL);
+
     g_signal_connect (combobox,"changed",G_CALLBACK (on_changed),fixed1);
     g_signal_connect(button_3, "clicked",G_CALLBACK(colocate_students), NULL);
 
