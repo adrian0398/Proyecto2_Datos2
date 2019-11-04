@@ -1,0 +1,125 @@
+\hypertarget{classList__Posiciones}{}\section{List\+\_\+\+Posiciones Class Reference}
+\label{classList__Posiciones}\index{List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}}
+
+
+Linked list que guarda todas las posiciones de la matriz.  
+
+
+
+
+{\ttfamily \#include $<$List\+\_\+\+Posiciones.\+h$>$}
+
+
+
+Collaboration diagram for List\+\_\+\+Posiciones\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classList__Posiciones_a910b5a43c3e371a026dc182617a6a20c}{display} ()
+\begin{DoxyCompactList}\small\item\em muestra la matriz \end{DoxyCompactList}\item 
+\hyperlink{classNode}{Node} $\ast$ \hyperlink{classList__Posiciones_a44902a273edd12fa779341f7dbd0f4f1}{remove\+Last\+Node} ()
+\item 
+void \hyperlink{classList__Posiciones_aa826398d2e34a0ccb1b4d0a91e06da30}{remove\+First\+Node} ()
+\begin{DoxyCompactList}\small\item\em elimina el primer nodo \end{DoxyCompactList}\item 
+void \hyperlink{classList__Posiciones_a90096ef7143e1d44c48d589af6f1e94c}{insert} (int x, int y)
+\begin{DoxyCompactList}\small\item\em inserta datos a un nodo \end{DoxyCompactList}\item 
+\hyperlink{classNode}{Node} $\ast$ \hyperlink{classList__Posiciones_adc4bc1ffeea86fde520563bc165f4e4b}{Get\+Nth} (int index)
+\begin{DoxyCompactList}\small\item\em optiene el nodo a buscar \end{DoxyCompactList}\item 
+int \hyperlink{classList__Posiciones_ac21ed6aafc1319876f938ef0cf7a1b60}{getsize} ()
+\begin{DoxyCompactList}\small\item\em optiene el largo de la lista \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classList__Posiciones_a553a00aec72532e6283344f515da588b}\label{classList__Posiciones_a553a00aec72532e6283344f515da588b}} 
+\hyperlink{classNode}{Node} $\ast$ \hyperlink{classList__Posiciones_a553a00aec72532e6283344f515da588b}{head} =N\+U\+LL
+\begin{DoxyCompactList}\small\item\em inserta al final de la lista \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Linked list que guarda todas las posiciones de la matriz. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classList__Posiciones_a910b5a43c3e371a026dc182617a6a20c}\label{classList__Posiciones_a910b5a43c3e371a026dc182617a6a20c}} 
+\index{List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}!display@{display}}
+\index{display@{display}!List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void List\+\_\+\+Posiciones\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+muestra la matriz 
+
+usa el nodo tmp para desplegar cada nodo hasta que la lista esté vacía \mbox{\Hypertarget{classList__Posiciones_adc4bc1ffeea86fde520563bc165f4e4b}\label{classList__Posiciones_adc4bc1ffeea86fde520563bc165f4e4b}} 
+\index{List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}!Get\+Nth@{Get\+Nth}}
+\index{Get\+Nth@{Get\+Nth}!List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}}
+\subsubsection{\texorpdfstring{Get\+Nth()}{GetNth()}}
+{\footnotesize\ttfamily \hyperlink{classNode}{Node}$\ast$ List\+\_\+\+Posiciones\+::\+Get\+Nth (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+optiene el nodo a buscar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & posicion a obtener \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nodo buscado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classList__Posiciones_ac21ed6aafc1319876f938ef0cf7a1b60}\label{classList__Posiciones_ac21ed6aafc1319876f938ef0cf7a1b60}} 
+\index{List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}!getsize@{getsize}}
+\index{getsize@{getsize}!List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}}
+\subsubsection{\texorpdfstring{getsize()}{getsize()}}
+{\footnotesize\ttfamily int List\+\_\+\+Posiciones\+::getsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+optiene el largo de la lista 
+
+\begin{DoxyReturn}{Returns}
+largo de la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classList__Posiciones_a90096ef7143e1d44c48d589af6f1e94c}\label{classList__Posiciones_a90096ef7143e1d44c48d589af6f1e94c}} 
+\index{List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}!insert@{insert}}
+\index{insert@{insert}!List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void List\+\_\+\+Posiciones\+::insert (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+inserta datos a un nodo 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & es la posición x que se desea guardar \\
+\hline
+{\em y} & es la posición y que se desea guardar \\
+\hline
+\end{DoxyParams}
+se mueve a travez de la lista hasta que este vacía\mbox{\Hypertarget{classList__Posiciones_aa826398d2e34a0ccb1b4d0a91e06da30}\label{classList__Posiciones_aa826398d2e34a0ccb1b4d0a91e06da30}} 
+\index{List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}!remove\+First\+Node@{remove\+First\+Node}}
+\index{remove\+First\+Node@{remove\+First\+Node}!List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}}
+\subsubsection{\texorpdfstring{remove\+First\+Node()}{removeFirstNode()}}
+{\footnotesize\ttfamily void List\+\_\+\+Posiciones\+::remove\+First\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+elimina el primer nodo 
+
+mueve el head al siguiente nodo\mbox{\Hypertarget{classList__Posiciones_a44902a273edd12fa779341f7dbd0f4f1}\label{classList__Posiciones_a44902a273edd12fa779341f7dbd0f4f1}} 
+\index{List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}!remove\+Last\+Node@{remove\+Last\+Node}}
+\index{remove\+Last\+Node@{remove\+Last\+Node}!List\+\_\+\+Posiciones@{List\+\_\+\+Posiciones}}
+\subsubsection{\texorpdfstring{remove\+Last\+Node()}{removeLastNode()}}
+{\footnotesize\ttfamily \hyperlink{classNode}{Node}$\ast$ List\+\_\+\+Posiciones\+::remove\+Last\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+encuentra el penultimo nodo
+
+borra el ultimo nodo
+
+cambia next por el penultimo nodo
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{List__Posiciones_8h}{List\+\_\+\+Posiciones.\+h}\end{DoxyCompactItemize}

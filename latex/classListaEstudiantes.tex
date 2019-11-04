@@ -1,0 +1,137 @@
+\hypertarget{classListaEstudiantes}{}\section{Lista\+Estudiantes Class Reference}
+\label{classListaEstudiantes}\index{Lista\+Estudiantes@{Lista\+Estudiantes}}
+
+
+Collaboration diagram for Lista\+Estudiantes\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classListaEstudiantes_a84e3b2666900e6173149d05940339b67}\label{classListaEstudiantes_a84e3b2666900e6173149d05940339b67}} 
+void {\bfseries display} ()
+\item 
+\hyperlink{classEstudiantes}{Estudiantes} $\ast$ \hyperlink{classListaEstudiantes_a2fc839804a0e84fe453cf22c662fc5c0}{remove\+Last\+Node} ()
+\begin{DoxyCompactList}\small\item\em elimina al nodo final de la lista \end{DoxyCompactList}\item 
+void \hyperlink{classListaEstudiantes_a93d5c3df6585cf7d9c7e72280afa1af2}{remove\+First\+Node} ()
+\begin{DoxyCompactList}\small\item\em elimina el primer nodo \end{DoxyCompactList}\item 
+void \hyperlink{classListaEstudiantes_a1c325ec864441b71d44a990f1d887726}{insert} (int x, int y, string tipo, Gtk\+Widget $\ast$image, \hyperlink{classList__Posiciones}{List\+\_\+\+Posiciones} $\ast$list\+Posiciones, double actualx, double actualy, \hyperlink{classListaEstudiantes}{Lista\+Estudiantes} $\ast$lista\+Estudiantes, int vida, int resistenciaarq, int resistenciaart, int resistenciamagos, int resistencialanza, int velocidad, string chromosome)
+\begin{DoxyCompactList}\small\item\em inserta estudiante a la lista \end{DoxyCompactList}\item 
+\hyperlink{classEstudiantes}{Estudiantes} $\ast$ \hyperlink{classListaEstudiantes_acc9153be212f34a46849e233716a4e41}{Get\+Nth} (int index)
+\begin{DoxyCompactList}\small\item\em optiene el nodo a buscar \end{DoxyCompactList}\item 
+int \hyperlink{classListaEstudiantes_a8db0ded4430c0f3457feaa24df975dfc}{getsize} ()
+\begin{DoxyCompactList}\small\item\em optiene el largo de la lista \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classListaEstudiantes_a8752e25d665296c5ba801dab473b4e8c}\label{classListaEstudiantes_a8752e25d665296c5ba801dab473b4e8c}} 
+void \hyperlink{classListaEstudiantes_a8752e25d665296c5ba801dab473b4e8c}{sorting} ()
+\begin{DoxyCompactList}\small\item\em metodo que ordena los estudiantes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classListaEstudiantes_ac3b7f8f472226575ef6731279d0fe8c9}\label{classListaEstudiantes_ac3b7f8f472226575ef6731279d0fe8c9}} 
+\hyperlink{classEstudiantes}{Estudiantes} $\ast$ {\bfseries head} =N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classListaEstudiantes_acc9153be212f34a46849e233716a4e41}\label{classListaEstudiantes_acc9153be212f34a46849e233716a4e41}} 
+\index{Lista\+Estudiantes@{Lista\+Estudiantes}!Get\+Nth@{Get\+Nth}}
+\index{Get\+Nth@{Get\+Nth}!Lista\+Estudiantes@{Lista\+Estudiantes}}
+\subsubsection{\texorpdfstring{Get\+Nth()}{GetNth()}}
+{\footnotesize\ttfamily \hyperlink{classEstudiantes}{Estudiantes}$\ast$ Lista\+Estudiantes\+::\+Get\+Nth (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+optiene el nodo a buscar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & posicion a obtener \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nodo buscado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classListaEstudiantes_a8db0ded4430c0f3457feaa24df975dfc}\label{classListaEstudiantes_a8db0ded4430c0f3457feaa24df975dfc}} 
+\index{Lista\+Estudiantes@{Lista\+Estudiantes}!getsize@{getsize}}
+\index{getsize@{getsize}!Lista\+Estudiantes@{Lista\+Estudiantes}}
+\subsubsection{\texorpdfstring{getsize()}{getsize()}}
+{\footnotesize\ttfamily int Lista\+Estudiantes\+::getsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+optiene el largo de la lista 
+
+\begin{DoxyReturn}{Returns}
+largo de la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classListaEstudiantes_a1c325ec864441b71d44a990f1d887726}\label{classListaEstudiantes_a1c325ec864441b71d44a990f1d887726}} 
+\index{Lista\+Estudiantes@{Lista\+Estudiantes}!insert@{insert}}
+\index{insert@{insert}!Lista\+Estudiantes@{Lista\+Estudiantes}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Lista\+Estudiantes\+::insert (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{string}]{tipo,  }\item[{Gtk\+Widget $\ast$}]{image,  }\item[{\hyperlink{classList__Posiciones}{List\+\_\+\+Posiciones} $\ast$}]{list\+Posiciones,  }\item[{double}]{actualx,  }\item[{double}]{actualy,  }\item[{\hyperlink{classListaEstudiantes}{Lista\+Estudiantes} $\ast$}]{lista\+Estudiantes,  }\item[{int}]{vida,  }\item[{int}]{resistenciaarq,  }\item[{int}]{resistenciaart,  }\item[{int}]{resistenciamagos,  }\item[{int}]{resistencialanza,  }\item[{int}]{velocidad,  }\item[{string}]{chromosome }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+inserta estudiante a la lista 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & posicion final en x \\
+\hline
+{\em y} & posicion final en y \\
+\hline
+{\em tipo} & tipo de estudiante \\
+\hline
+{\em image} & imagen del estudiante \\
+\hline
+{\em list\+Posiciones} & lista del camino a seguir \\
+\hline
+{\em actualx} & posicion actual en x del estudiante \\
+\hline
+{\em actualy} & posicion actual en y del estudiante \\
+\hline
+{\em lista\+Estudiantes} & lista de estudiantes \\
+\hline
+{\em vida} & vida del estudiante \\
+\hline
+{\em resistenciaarq} & resistencia a cursos arqueros \\
+\hline
+{\em resistenciaart} & resistencia a cursos artilleros \\
+\hline
+{\em resistenciamagos} & resistencia a cursos magos \\
+\hline
+{\em resistencialanza} & resistencia a cursos lanza fuego \\
+\hline
+{\em velocidad} & velocidad de movimiento del estudiante \\
+\hline
+{\em chromosome} & cromosoma del estudiante \\
+\hline
+\end{DoxyParams}
+se mueve a travez de la lista hasta que este vacía\mbox{\Hypertarget{classListaEstudiantes_a93d5c3df6585cf7d9c7e72280afa1af2}\label{classListaEstudiantes_a93d5c3df6585cf7d9c7e72280afa1af2}} 
+\index{Lista\+Estudiantes@{Lista\+Estudiantes}!remove\+First\+Node@{remove\+First\+Node}}
+\index{remove\+First\+Node@{remove\+First\+Node}!Lista\+Estudiantes@{Lista\+Estudiantes}}
+\subsubsection{\texorpdfstring{remove\+First\+Node()}{removeFirstNode()}}
+{\footnotesize\ttfamily void Lista\+Estudiantes\+::remove\+First\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+elimina el primer nodo 
+
+mueve el head al siguiente nodo\mbox{\Hypertarget{classListaEstudiantes_a2fc839804a0e84fe453cf22c662fc5c0}\label{classListaEstudiantes_a2fc839804a0e84fe453cf22c662fc5c0}} 
+\index{Lista\+Estudiantes@{Lista\+Estudiantes}!remove\+Last\+Node@{remove\+Last\+Node}}
+\index{remove\+Last\+Node@{remove\+Last\+Node}!Lista\+Estudiantes@{Lista\+Estudiantes}}
+\subsubsection{\texorpdfstring{remove\+Last\+Node()}{removeLastNode()}}
+{\footnotesize\ttfamily \hyperlink{classEstudiantes}{Estudiantes}$\ast$ Lista\+Estudiantes\+::remove\+Last\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+elimina al nodo final de la lista 
+
+encuentra el penultimo nodo
+
+borra el ultimo nodo
+
+cambia next por el penultimo nodo
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ListaEstudiantes_8h}{Lista\+Estudiantes.\+h}\end{DoxyCompactItemize}

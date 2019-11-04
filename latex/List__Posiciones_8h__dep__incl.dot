@@ -1,0 +1,23 @@
+digraph "List_Posiciones.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node3 [label="List_Posiciones.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Estudiantes.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Estudiantes_8h.html",tooltip="Estructura objeto de tipo estudiante que almacena los atributos del estudiante. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="AlgoritmosGeneticos.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$AlgoritmosGeneticos_8h.html",tooltip="metodo que evoluciona, mezcla y crea generaciones de estudiantes "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Individual.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Individual_8h_source.html"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="ListaEstudiantes.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ListaEstudiantes_8h.html",tooltip="Estructura que almacena estudiantes colocados en la matriz. "];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="ListaBalas.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ListaBalas_8h.html",tooltip="Estructura que almacena balas. "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Backtracking.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Backtracking_8h.html",tooltip="metodo que busca el camino disponible desde el origne del estudiante hasta la zona de aprobación ..."];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Matriz.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Matriz_8h.html",tooltip="manejo de los metodos que trabajan sobre la matriz logica "];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Pathfinding.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Pathfinding_8h.html",tooltip="metodo que busca el camino optimo desde el origne del estudiante hasta la zona de aprobación ..."];
+}

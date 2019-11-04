@@ -1,0 +1,26 @@
+\hypertarget{AlgoritmosGeneticos_8h}{}\section{Algoritmos\+Geneticos.\+h File Reference}
+\label{AlgoritmosGeneticos_8h}\index{Algoritmos\+Geneticos.\+h@{Algoritmos\+Geneticos.\+h}}
+
+
+metodo que evoluciona, mezcla y crea generaciones de estudiantes  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Estudiantes.\+h\char`\"{}}\newline
+Include dependency graph for Algoritmos\+Geneticos.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAlgoritmosGeneticos}{Algoritmos\+Geneticos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+metodo que evoluciona, mezcla y crea generaciones de estudiantes 
+
+\begin{DoxyAuthor}{Author}
+Adrian Lopez 
+\end{DoxyAuthor}

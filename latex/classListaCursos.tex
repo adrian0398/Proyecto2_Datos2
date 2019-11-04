@@ -1,0 +1,138 @@
+\hypertarget{classListaCursos}{}\section{Lista\+Cursos Class Reference}
+\label{classListaCursos}\index{Lista\+Cursos@{Lista\+Cursos}}
+
+
+Collaboration diagram for Lista\+Cursos\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classListaCursos_a01b9dc2b5011846c4751dc9bbb95d8d3}\label{classListaCursos_a01b9dc2b5011846c4751dc9bbb95d8d3}} 
+void {\bfseries display} ()
+\item 
+\hyperlink{classCursos}{Cursos} $\ast$ \hyperlink{classListaCursos_a7832eb4a5ece08c1467228673a621af1}{remove\+Last\+Node} ()
+\begin{DoxyCompactList}\small\item\em elimina al nodo final de la lista \end{DoxyCompactList}\item 
+void \hyperlink{classListaCursos_a08247e012d20ba8740daa4621a152e5b}{remove\+First\+Node} ()
+\begin{DoxyCompactList}\small\item\em elimina el primer nodo \end{DoxyCompactList}\item 
+void \hyperlink{classListaCursos_ade9e462b89373b55f7e8596cb945a78d}{insert} (int x, int y, string tipo, Gtk\+Widget $\ast$image, Gtk\+Widget $\ast$label)
+\begin{DoxyCompactList}\small\item\em inserta cursos a la lista \end{DoxyCompactList}\item 
+\hyperlink{classCursos}{Cursos} $\ast$ \hyperlink{classListaCursos_a81dfb062a0308da32fd97ec25b7a84cc}{Get\+Nth} (int index)
+\begin{DoxyCompactList}\small\item\em optiene el nodo a buscar \end{DoxyCompactList}\item 
+int \hyperlink{classListaCursos_a8817e5ba536b0cd050eefb89400054d1}{getsize} ()
+\begin{DoxyCompactList}\small\item\em optiene el largo de la lista \end{DoxyCompactList}\item 
+\hyperlink{classCursos}{Cursos} $\ast$ \hyperlink{classListaCursos_a9a91363330c922741a5204bc89be5f16}{search} (int x, int y)
+\begin{DoxyCompactList}\small\item\em busca un curso en la matriz \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classListaCursos_a193ef0ae3378067725e7d12b18a81bc3}\label{classListaCursos_a193ef0ae3378067725e7d12b18a81bc3}} 
+\hyperlink{classCursos}{Cursos} $\ast$ {\bfseries head} =N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classListaCursos_a81dfb062a0308da32fd97ec25b7a84cc}\label{classListaCursos_a81dfb062a0308da32fd97ec25b7a84cc}} 
+\index{Lista\+Cursos@{Lista\+Cursos}!Get\+Nth@{Get\+Nth}}
+\index{Get\+Nth@{Get\+Nth}!Lista\+Cursos@{Lista\+Cursos}}
+\subsubsection{\texorpdfstring{Get\+Nth()}{GetNth()}}
+{\footnotesize\ttfamily \hyperlink{classCursos}{Cursos}$\ast$ Lista\+Cursos\+::\+Get\+Nth (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+optiene el nodo a buscar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & posicion a obtener \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nodo buscado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classListaCursos_a8817e5ba536b0cd050eefb89400054d1}\label{classListaCursos_a8817e5ba536b0cd050eefb89400054d1}} 
+\index{Lista\+Cursos@{Lista\+Cursos}!getsize@{getsize}}
+\index{getsize@{getsize}!Lista\+Cursos@{Lista\+Cursos}}
+\subsubsection{\texorpdfstring{getsize()}{getsize()}}
+{\footnotesize\ttfamily int Lista\+Cursos\+::getsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+optiene el largo de la lista 
+
+\begin{DoxyReturn}{Returns}
+largo de la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classListaCursos_ade9e462b89373b55f7e8596cb945a78d}\label{classListaCursos_ade9e462b89373b55f7e8596cb945a78d}} 
+\index{Lista\+Cursos@{Lista\+Cursos}!insert@{insert}}
+\index{insert@{insert}!Lista\+Cursos@{Lista\+Cursos}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Lista\+Cursos\+::insert (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{string}]{tipo,  }\item[{Gtk\+Widget $\ast$}]{image,  }\item[{Gtk\+Widget $\ast$}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+inserta cursos a la lista 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & posicion final en x \\
+\hline
+{\em y} & posicion final en y \\
+\hline
+{\em image} & imagen del curso \\
+\hline
+{\em label} & label donde el curso se mostrara \\
+\hline
+{\em objetivo} & estudiante objetivo \\
+\hline
+{\em tipo} & tipo de curso \\
+\hline
+\end{DoxyParams}
+se mueve a travez de la lista hasta que este vacía\mbox{\Hypertarget{classListaCursos_a08247e012d20ba8740daa4621a152e5b}\label{classListaCursos_a08247e012d20ba8740daa4621a152e5b}} 
+\index{Lista\+Cursos@{Lista\+Cursos}!remove\+First\+Node@{remove\+First\+Node}}
+\index{remove\+First\+Node@{remove\+First\+Node}!Lista\+Cursos@{Lista\+Cursos}}
+\subsubsection{\texorpdfstring{remove\+First\+Node()}{removeFirstNode()}}
+{\footnotesize\ttfamily void Lista\+Cursos\+::remove\+First\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+elimina el primer nodo 
+
+mueve el head al siguiente nodo\mbox{\Hypertarget{classListaCursos_a7832eb4a5ece08c1467228673a621af1}\label{classListaCursos_a7832eb4a5ece08c1467228673a621af1}} 
+\index{Lista\+Cursos@{Lista\+Cursos}!remove\+Last\+Node@{remove\+Last\+Node}}
+\index{remove\+Last\+Node@{remove\+Last\+Node}!Lista\+Cursos@{Lista\+Cursos}}
+\subsubsection{\texorpdfstring{remove\+Last\+Node()}{removeLastNode()}}
+{\footnotesize\ttfamily \hyperlink{classCursos}{Cursos}$\ast$ Lista\+Cursos\+::remove\+Last\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+elimina al nodo final de la lista 
+
+encuentra el penultimo nodo
+
+borra el ultimo nodo
+
+cambia next por el penultimo nodo\mbox{\Hypertarget{classListaCursos_a9a91363330c922741a5204bc89be5f16}\label{classListaCursos_a9a91363330c922741a5204bc89be5f16}} 
+\index{Lista\+Cursos@{Lista\+Cursos}!search@{search}}
+\index{search@{search}!Lista\+Cursos@{Lista\+Cursos}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \hyperlink{classCursos}{Cursos}$\ast$ Lista\+Cursos\+::search (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+busca un curso en la matriz 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & posicion en x del curso \\
+\hline
+{\em y} & posicion en y del curso \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tmp curso 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ListaCursos_8h}{Lista\+Cursos.\+h}\end{DoxyCompactItemize}

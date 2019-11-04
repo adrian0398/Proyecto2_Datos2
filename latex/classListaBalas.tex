@@ -1,0 +1,138 @@
+\hypertarget{classListaBalas}{}\section{Lista\+Balas Class Reference}
+\label{classListaBalas}\index{Lista\+Balas@{Lista\+Balas}}
+
+
+Linked list que guarda todas las balas disparadas.  
+
+
+
+
+{\ttfamily \#include $<$Lista\+Balas.\+h$>$}
+
+
+
+Collaboration diagram for Lista\+Balas\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classListaBalas_a5ce452a7adfbe4e734239579e30a50e2}{display} ()
+\begin{DoxyCompactList}\small\item\em muestra las balas \end{DoxyCompactList}\item 
+\hyperlink{classBalas}{Balas} $\ast$ \hyperlink{classListaBalas_ae38baa10f7be51f76e7b6e44e0e3a4e2}{remove\+Last\+Node} ()
+\begin{DoxyCompactList}\small\item\em elimina al nodo final de la lista \end{DoxyCompactList}\item 
+void \hyperlink{classListaBalas_a83897d7c69207e879a0d5c8da98f2573}{remove\+First\+Node} ()
+\begin{DoxyCompactList}\small\item\em elimina el primer nodo \end{DoxyCompactList}\item 
+void \hyperlink{classListaBalas_a5ba03ff5277361dcf0f17d44e644fb9d}{insert} (int x, int y, Gtk\+Widget $\ast$image, \hyperlink{classEstudiantes}{Estudiantes} $\ast$objetivo, \hyperlink{classCursos}{Cursos} $\ast$tipo)
+\begin{DoxyCompactList}\small\item\em inserta balas a la lista \end{DoxyCompactList}\item 
+\hyperlink{classBalas}{Balas} $\ast$ \hyperlink{classListaBalas_ad04cd8b77e658ad2d4cfd8bcccd45411}{Get\+Nth} (int index)
+\begin{DoxyCompactList}\small\item\em optiene el nodo a buscar \end{DoxyCompactList}\item 
+int \hyperlink{classListaBalas_acd8346cc5d06186c486c28743a4e9ccb}{getsize} ()
+\begin{DoxyCompactList}\small\item\em optiene el largo de la lista \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classListaBalas_a19dd6cf913126b5a4dc8ea4851322b18}\label{classListaBalas_a19dd6cf913126b5a4dc8ea4851322b18}} 
+void {\bfseries delete\+Node} (int position)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classListaBalas_ae1ce1d2fb377e8be991a975c2783ceb8}\label{classListaBalas_ae1ce1d2fb377e8be991a975c2783ceb8}} 
+\hyperlink{classBalas}{Balas} $\ast$ {\bfseries head} =N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Linked list que guarda todas las balas disparadas. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classListaBalas_a5ce452a7adfbe4e734239579e30a50e2}\label{classListaBalas_a5ce452a7adfbe4e734239579e30a50e2}} 
+\index{Lista\+Balas@{Lista\+Balas}!display@{display}}
+\index{display@{display}!Lista\+Balas@{Lista\+Balas}}
+\subsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Lista\+Balas\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+muestra las balas 
+
+usa el nodo tmp para desplegar cada nodo hasta que la lista esté vacía \mbox{\Hypertarget{classListaBalas_ad04cd8b77e658ad2d4cfd8bcccd45411}\label{classListaBalas_ad04cd8b77e658ad2d4cfd8bcccd45411}} 
+\index{Lista\+Balas@{Lista\+Balas}!Get\+Nth@{Get\+Nth}}
+\index{Get\+Nth@{Get\+Nth}!Lista\+Balas@{Lista\+Balas}}
+\subsubsection{\texorpdfstring{Get\+Nth()}{GetNth()}}
+{\footnotesize\ttfamily \hyperlink{classBalas}{Balas}$\ast$ Lista\+Balas\+::\+Get\+Nth (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+optiene el nodo a buscar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & posicion a obtener \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nodo buscado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classListaBalas_acd8346cc5d06186c486c28743a4e9ccb}\label{classListaBalas_acd8346cc5d06186c486c28743a4e9ccb}} 
+\index{Lista\+Balas@{Lista\+Balas}!getsize@{getsize}}
+\index{getsize@{getsize}!Lista\+Balas@{Lista\+Balas}}
+\subsubsection{\texorpdfstring{getsize()}{getsize()}}
+{\footnotesize\ttfamily int Lista\+Balas\+::getsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+optiene el largo de la lista 
+
+\begin{DoxyReturn}{Returns}
+largo de la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classListaBalas_a5ba03ff5277361dcf0f17d44e644fb9d}\label{classListaBalas_a5ba03ff5277361dcf0f17d44e644fb9d}} 
+\index{Lista\+Balas@{Lista\+Balas}!insert@{insert}}
+\index{insert@{insert}!Lista\+Balas@{Lista\+Balas}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void Lista\+Balas\+::insert (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{Gtk\+Widget $\ast$}]{image,  }\item[{\hyperlink{classEstudiantes}{Estudiantes} $\ast$}]{objetivo,  }\item[{\hyperlink{classCursos}{Cursos} $\ast$}]{tipo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+inserta balas a la lista 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & posicion final en x \\
+\hline
+{\em y} & posicion final en y \\
+\hline
+{\em image} & imagen de la bala \\
+\hline
+{\em objetivo} & estudiante objetivo \\
+\hline
+{\em tipo} & tipo de curso que la dispara \\
+\hline
+\end{DoxyParams}
+se mueve a travez de la lista hasta que este vacía\mbox{\Hypertarget{classListaBalas_a83897d7c69207e879a0d5c8da98f2573}\label{classListaBalas_a83897d7c69207e879a0d5c8da98f2573}} 
+\index{Lista\+Balas@{Lista\+Balas}!remove\+First\+Node@{remove\+First\+Node}}
+\index{remove\+First\+Node@{remove\+First\+Node}!Lista\+Balas@{Lista\+Balas}}
+\subsubsection{\texorpdfstring{remove\+First\+Node()}{removeFirstNode()}}
+{\footnotesize\ttfamily void Lista\+Balas\+::remove\+First\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+elimina el primer nodo 
+
+mueve el head al siguiente nodo\mbox{\Hypertarget{classListaBalas_ae38baa10f7be51f76e7b6e44e0e3a4e2}\label{classListaBalas_ae38baa10f7be51f76e7b6e44e0e3a4e2}} 
+\index{Lista\+Balas@{Lista\+Balas}!remove\+Last\+Node@{remove\+Last\+Node}}
+\index{remove\+Last\+Node@{remove\+Last\+Node}!Lista\+Balas@{Lista\+Balas}}
+\subsubsection{\texorpdfstring{remove\+Last\+Node()}{removeLastNode()}}
+{\footnotesize\ttfamily \hyperlink{classBalas}{Balas}$\ast$ Lista\+Balas\+::remove\+Last\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+elimina al nodo final de la lista 
+
+encuentra el penultimo nodo
+
+borra el ultimo nodo
+
+cambia next por el penultimo nodo
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ListaBalas_8h}{Lista\+Balas.\+h}\end{DoxyCompactItemize}

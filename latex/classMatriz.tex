@@ -1,0 +1,107 @@
+\hypertarget{classMatriz}{}\section{Matriz Class Reference}
+\label{classMatriz}\index{Matriz@{Matriz}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMatriz_a733a7d3965544c1e1debe26a6ba54808}{escribir\+Matriz} (int x, int y, int matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]})
+\begin{DoxyCompactList}\small\item\em escribe un valor en al matriz segun se requiera \end{DoxyCompactList}\item 
+void \hyperlink{classMatriz_ab74d8aed5ec41d306a55f509860edc7e}{escribir\+Matrizgeneral} (int x, int y, int matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]})
+\begin{DoxyCompactList}\small\item\em escribe un valor en al matriz segun se requiera \end{DoxyCompactList}\item 
+\hyperlink{classList__Posiciones}{List\+\_\+\+Posiciones} $\ast$ \hyperlink{classMatriz_ae5786d501d5f490ed990e4d452bb1512}{hacer\+Backtracking} (int matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]}, int inicioy, int llegaday)
+\begin{DoxyCompactList}\small\item\em metodo que llama al backtracking y le pasa los datos iniciales necesarios \end{DoxyCompactList}\item 
+\hyperlink{classList__Posiciones}{List\+\_\+\+Posiciones} $\ast$ \hyperlink{classMatriz_a75a58827e2f1e26f2d1c928c09da3561}{hacer\+Pathfinding} (int matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]}, int inicioy, int llegaday)
+\begin{DoxyCompactList}\small\item\em metodo que llama al pathfinding y le pasa los datos iniciales necesarios \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMatriz_aca4ea10dd5e3ecb04f9a090b956a3ece}\label{classMatriz_aca4ea10dd5e3ecb04f9a090b956a3ece}} 
+void {\bfseries mostrar\+Matriz} (int matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMatriz_a733a7d3965544c1e1debe26a6ba54808}\label{classMatriz_a733a7d3965544c1e1debe26a6ba54808}} 
+\index{Matriz@{Matriz}!escribir\+Matriz@{escribir\+Matriz}}
+\index{escribir\+Matriz@{escribir\+Matriz}!Matriz@{Matriz}}
+\subsubsection{\texorpdfstring{escribir\+Matriz()}{escribirMatriz()}}
+{\footnotesize\ttfamily void Matriz\+::escribir\+Matriz (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+escribe un valor en al matriz segun se requiera 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & posicion en x a cambiar dato \\
+\hline
+{\em y} & posicion en y a cambiar dato \\
+\hline
+{\em matriz} & matriz de juego auxiliar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMatriz_ab74d8aed5ec41d306a55f509860edc7e}\label{classMatriz_ab74d8aed5ec41d306a55f509860edc7e}} 
+\index{Matriz@{Matriz}!escribir\+Matrizgeneral@{escribir\+Matrizgeneral}}
+\index{escribir\+Matrizgeneral@{escribir\+Matrizgeneral}!Matriz@{Matriz}}
+\subsubsection{\texorpdfstring{escribir\+Matrizgeneral()}{escribirMatrizgeneral()}}
+{\footnotesize\ttfamily void Matriz\+::escribir\+Matrizgeneral (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+escribe un valor en al matriz segun se requiera 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & posicion en x a cambiar dato \\
+\hline
+{\em y} & posicion en y a cambiar dato \\
+\hline
+{\em matriz} & matriz de juego \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMatriz_ae5786d501d5f490ed990e4d452bb1512}\label{classMatriz_ae5786d501d5f490ed990e4d452bb1512}} 
+\index{Matriz@{Matriz}!hacer\+Backtracking@{hacer\+Backtracking}}
+\index{hacer\+Backtracking@{hacer\+Backtracking}!Matriz@{Matriz}}
+\subsubsection{\texorpdfstring{hacer\+Backtracking()}{hacerBacktracking()}}
+{\footnotesize\ttfamily \hyperlink{classList__Posiciones}{List\+\_\+\+Posiciones} $\ast$ Matriz\+::hacer\+Backtracking (\begin{DoxyParamCaption}\item[{int}]{matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]},  }\item[{int}]{inicioy,  }\item[{int}]{llegaday }\end{DoxyParamCaption})}
+
+
+
+metodo que llama al backtracking y le pasa los datos iniciales necesarios 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & matriz de juego auxiliar \\
+\hline
+{\em inicioy} & posicion y de inicio \\
+\hline
+{\em llegaday} & posicion y de llegada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+camino desde origen a destino 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatriz_a75a58827e2f1e26f2d1c928c09da3561}\label{classMatriz_a75a58827e2f1e26f2d1c928c09da3561}} 
+\index{Matriz@{Matriz}!hacer\+Pathfinding@{hacer\+Pathfinding}}
+\index{hacer\+Pathfinding@{hacer\+Pathfinding}!Matriz@{Matriz}}
+\subsubsection{\texorpdfstring{hacer\+Pathfinding()}{hacerPathfinding()}}
+{\footnotesize\ttfamily \hyperlink{classList__Posiciones}{List\+\_\+\+Posiciones} $\ast$ Matriz\+::hacer\+Pathfinding (\begin{DoxyParamCaption}\item[{int}]{matriz\mbox{[}12\mbox{]}\mbox{[}12\mbox{]},  }\item[{int}]{inicioy,  }\item[{int}]{llegaday }\end{DoxyParamCaption})}
+
+
+
+metodo que llama al pathfinding y le pasa los datos iniciales necesarios 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & matriz de juego \\
+\hline
+{\em inicioy} & posicion y de inicio \\
+\hline
+{\em llegaday} & posicion y de llegada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+camino desde origen a destino 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Matriz_8h}{Matriz.\+h}\item 
+Matriz.\+cpp\end{DoxyCompactItemize}
