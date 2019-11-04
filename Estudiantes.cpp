@@ -59,3 +59,11 @@ const string &Estudiantes::getTipo() const {
 void Estudiantes::setTipo(const string &tipo) {
     Estudiantes::tipo = tipo;
 }
+
+const string &Estudiantes::getChromosome() const {
+    return chromosome;
+}
+
+void Estudiantes::setChromosome(const string &chromosome) {
+    Estudiantes::chromosome = chromosome;
+}

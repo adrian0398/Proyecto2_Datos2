@@ -48,10 +48,10 @@ RM = /home/adrian/Documents/CLion-2019.2/clion-2019.2/bin/cmake/linux/bin/cmake 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adrian/CLionProjects/Proyecto2_Datos2
+CMAKE_SOURCE_DIR = /home/adrian/CLionProjects/Proyecto2_Datos2/final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles /home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/CMakeFiles /home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -231,6 +231,33 @@ Estudiantes.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Estudiantes.cpp.s
 .PHONY : Estudiantes.cpp.s
 
+Individual.o: Individual.cpp.o
+
+.PHONY : Individual.o
+
+# target to build an object file
+Individual.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.o
+.PHONY : Individual.cpp.o
+
+Individual.i: Individual.cpp.i
+
+.PHONY : Individual.i
+
+# target to preprocess a source file
+Individual.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.i
+.PHONY : Individual.cpp.i
+
+Individual.s: Individual.cpp.s
+
+.PHONY : Individual.s
+
+# target to generate assembly for a file
+Individual.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Individual.cpp.s
+.PHONY : Individual.cpp.s
+
 Juego.o: Juego.cpp.o
 
 .PHONY : Juego.o
@@ -258,6 +285,141 @@ Juego.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Juego.cpp.s
 .PHONY : Juego.cpp.s
 
+List_Posiciones.o: List_Posiciones.cpp.o
+
+.PHONY : List_Posiciones.o
+
+# target to build an object file
+List_Posiciones.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.o
+.PHONY : List_Posiciones.cpp.o
+
+List_Posiciones.i: List_Posiciones.cpp.i
+
+.PHONY : List_Posiciones.i
+
+# target to preprocess a source file
+List_Posiciones.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.i
+.PHONY : List_Posiciones.cpp.i
+
+List_Posiciones.s: List_Posiciones.cpp.s
+
+.PHONY : List_Posiciones.s
+
+# target to generate assembly for a file
+List_Posiciones.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/List_Posiciones.cpp.s
+.PHONY : List_Posiciones.cpp.s
+
+ListaBalas.o: ListaBalas.cpp.o
+
+.PHONY : ListaBalas.o
+
+# target to build an object file
+ListaBalas.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.o
+.PHONY : ListaBalas.cpp.o
+
+ListaBalas.i: ListaBalas.cpp.i
+
+.PHONY : ListaBalas.i
+
+# target to preprocess a source file
+ListaBalas.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.i
+.PHONY : ListaBalas.cpp.i
+
+ListaBalas.s: ListaBalas.cpp.s
+
+.PHONY : ListaBalas.s
+
+# target to generate assembly for a file
+ListaBalas.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaBalas.cpp.s
+.PHONY : ListaBalas.cpp.s
+
+ListaCursos.o: ListaCursos.cpp.o
+
+.PHONY : ListaCursos.o
+
+# target to build an object file
+ListaCursos.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.o
+.PHONY : ListaCursos.cpp.o
+
+ListaCursos.i: ListaCursos.cpp.i
+
+.PHONY : ListaCursos.i
+
+# target to preprocess a source file
+ListaCursos.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.i
+.PHONY : ListaCursos.cpp.i
+
+ListaCursos.s: ListaCursos.cpp.s
+
+.PHONY : ListaCursos.s
+
+# target to generate assembly for a file
+ListaCursos.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaCursos.cpp.s
+.PHONY : ListaCursos.cpp.s
+
+ListaEstudiantes.o: ListaEstudiantes.cpp.o
+
+.PHONY : ListaEstudiantes.o
+
+# target to build an object file
+ListaEstudiantes.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.o
+.PHONY : ListaEstudiantes.cpp.o
+
+ListaEstudiantes.i: ListaEstudiantes.cpp.i
+
+.PHONY : ListaEstudiantes.i
+
+# target to preprocess a source file
+ListaEstudiantes.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.i
+.PHONY : ListaEstudiantes.cpp.i
+
+ListaEstudiantes.s: ListaEstudiantes.cpp.s
+
+.PHONY : ListaEstudiantes.s
+
+# target to generate assembly for a file
+ListaEstudiantes.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/ListaEstudiantes.cpp.s
+.PHONY : ListaEstudiantes.cpp.s
+
+Matriz.o: Matriz.cpp.o
+
+.PHONY : Matriz.o
+
+# target to build an object file
+Matriz.cpp.o:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.o
+.PHONY : Matriz.cpp.o
+
+Matriz.i: Matriz.cpp.i
+
+.PHONY : Matriz.i
+
+# target to preprocess a source file
+Matriz.cpp.i:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.i
+.PHONY : Matriz.cpp.i
+
+Matriz.s: Matriz.cpp.s
+
+.PHONY : Matriz.s
+
+# target to generate assembly for a file
+Matriz.cpp.s:
+	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Matriz.cpp.s
+.PHONY : Matriz.cpp.s
+
 Pathfinding.o: Pathfinding.cpp.o
 
 .PHONY : Pathfinding.o
@@ -284,33 +446,6 @@ Pathfinding.s: Pathfinding.cpp.s
 Pathfinding.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Pathfinding.cpp.s
 .PHONY : Pathfinding.cpp.s
-
-Tablero.o: Tablero.cpp.o
-
-.PHONY : Tablero.o
-
-# target to build an object file
-Tablero.cpp.o:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.o
-.PHONY : Tablero.cpp.o
-
-Tablero.i: Tablero.cpp.i
-
-.PHONY : Tablero.i
-
-# target to preprocess a source file
-Tablero.cpp.i:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.i
-.PHONY : Tablero.cpp.i
-
-Tablero.s: Tablero.cpp.s
-
-.PHONY : Tablero.s
-
-# target to generate assembly for a file
-Tablero.cpp.s:
-	$(MAKE) -f CMakeFiles/Proyecto2_Datos2.dir/build.make CMakeFiles/Proyecto2_Datos2.dir/Tablero.cpp.s
-.PHONY : Tablero.cpp.s
 
 main.o: main.cpp.o
 
@@ -360,15 +495,30 @@ help:
 	@echo "... Estudiantes.o"
 	@echo "... Estudiantes.i"
 	@echo "... Estudiantes.s"
+	@echo "... Individual.o"
+	@echo "... Individual.i"
+	@echo "... Individual.s"
 	@echo "... Juego.o"
 	@echo "... Juego.i"
 	@echo "... Juego.s"
+	@echo "... List_Posiciones.o"
+	@echo "... List_Posiciones.i"
+	@echo "... List_Posiciones.s"
+	@echo "... ListaBalas.o"
+	@echo "... ListaBalas.i"
+	@echo "... ListaBalas.s"
+	@echo "... ListaCursos.o"
+	@echo "... ListaCursos.i"
+	@echo "... ListaCursos.s"
+	@echo "... ListaEstudiantes.o"
+	@echo "... ListaEstudiantes.i"
+	@echo "... ListaEstudiantes.s"
+	@echo "... Matriz.o"
+	@echo "... Matriz.i"
+	@echo "... Matriz.s"
 	@echo "... Pathfinding.o"
 	@echo "... Pathfinding.i"
 	@echo "... Pathfinding.s"
-	@echo "... Tablero.o"
-	@echo "... Tablero.i"
-	@echo "... Tablero.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

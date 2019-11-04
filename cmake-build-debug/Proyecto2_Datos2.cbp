@@ -8,32 +8,49 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug"/>
+				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug"/>
+				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Proyecto2_Datos2">
-				<Option output="/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Proyecto2_Datos2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Proyecto2_Datos2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/gtk-3.0"/>
+					<Add directory="/usr/include/at-spi2-atk/2.0"/>
+					<Add directory="/usr/include/at-spi-2.0"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/gio-unix-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/pixman-1"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/home/adrian/CLionProjects/Proyecto2_Datos2/final/./include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -44,19 +61,36 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto2_Datos2"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto2_Datos2"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Proyecto2_Datos2/fast">
-				<Option output="/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Proyecto2_Datos2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Proyecto2_Datos2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/gtk-3.0"/>
+					<Add directory="/usr/include/at-spi2-atk/2.0"/>
+					<Add directory="/usr/include/at-spi-2.0"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/gio-unix-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/pixman-1"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/home/adrian/CLionProjects/Proyecto2_Datos2/final/./include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -67,69 +101,99 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto2_Datos2/fast"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 Proyecto2_Datos2/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug"/>
+				<Option working_dir="/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j6 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/adrian/CLionProjects/Proyecto2_Datos2/final/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.cpp">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/AlgoritmosGeneticos.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/AlgoritmosGeneticos.h">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/AlgoritmosGeneticos.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Backtracking.cpp">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Backtracking.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Backtracking.h">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Backtracking.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Cursos.cpp">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Cursos.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Cursos.h">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Cursos.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Estudiantes.cpp">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Estudiantes.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Estudiantes.h">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Estudiantes.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Juego.cpp">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Individual.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Juego.h">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Individual.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Pathfinding.cpp">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Juego.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Pathfinding.h">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Juego.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Tablero.cpp">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/List_Posiciones.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/Tablero.h">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/List_Posiciones.h">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/main.cpp">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/ListaBalas.cpp">
 			<Option target="Proyecto2_Datos2"/>
 		</Unit>
-		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/CMakeLists.txt">
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/ListaBalas.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/ListaCursos.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/ListaCursos.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/ListaEstudiantes.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/ListaEstudiantes.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Matriz.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Matriz.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Pathfinding.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/Pathfinding.h">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/main.cpp">
+			<Option target="Proyecto2_Datos2"/>
+		</Unit>
+		<Unit filename="/home/adrian/CLionProjects/Proyecto2_Datos2/final/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
